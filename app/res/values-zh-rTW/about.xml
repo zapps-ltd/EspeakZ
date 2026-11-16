@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">關於 EspeakZ</string>
+  <string name="about_author">作者：zapps-ltd</string>
+  <string name="about_summary">作者：zapps-ltd，版本 %s</string>
+  <string name="about_version">版本 %s</string>
+  <string name="about_team_heading">開發團隊</string>
+  <string name="about_team">zapps.ltd 開發者：%1$s 和 %2$s</string>
+  <string name="about_contact_heading">聯絡方式</string>
+  <string name="about_email">電子郵件 %1$s</string>
+  <string name="about_home">造訪 zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ 是一款適用於 Android 的文字轉語音引擎。它是 eSpeak NG Android 應用程式的分支，使用 eSpeak NG 語音引擎朗讀，該引擎支援 100 多種語言和口音。EspeakZ 不是官方的 eSpeak NG 應用程式，也未獲得 eSpeak NG 專案的認可。它可以與官方應用程式並存安裝。</string>
+
+  <string name="about_privacy_heading">隱私權</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ 不會收集任何資料，也不會因任何原因連線到網際網路。它不會要求網際網路權限。</item>
+    <item>EspeakZ 朗讀的內容、它的設定和語音資料都保留在您的裝置上。</item>
+    <item>使用雙語言時，EspeakZ 會把第二種語言的文字交給您所選語音對應的引擎。該文字適用此引擎自己的隱私權條款，標示為「需要網路」的語音會把該文字傳送給其提供者。</item>
+  </string-array>
+
+  <string name="about_goals_heading">關於此分支</string>
+  <string-array name="about_goals">
+    <item>目標：安裝後第一次要求就能發聲，不必關閉再開啟引擎，也不需要額外的安裝步驟。已完成。</item>
+    <item>目標：將 Klatt 變體 6 作為預設語音變體。已完成。</item>
+    <item>目標：用 Kotlin 重寫應用程式的 Android 程式碼。已完成。</item>
+  </string-array>
+
+  <string name="about_changes_heading">相對於 eSpeak NG 的變更</string>
+  <string-array name="about_changes">
+    <item>EspeakZ 始於 2026 年 9 月 22 日的 eSpeak NG 1.53.0。以下變更於 2026 年 10 月完成。</item>
+    <item>第一次要求就發聲：應用程式一啟動就安裝語音資料，引擎會等待安裝完成而不是保持沉默，因此螢幕閱讀器的第一句話也能讀出來。</item>
+    <item>語音語言：第一次啟動時會安裝您裝置的語言和英文。可在設定的語音語言中新增或移除語言。</item>
+    <item>Klatt 變體 6 是預設語音變體。</item>
+    <item>應用程式使用 Kotlin 撰寫，引擎在朗讀時不會重新啟動。</item>
+    <item>啟動更快：第一次啟動之後，即使在手錶上，引擎也能在百分之幾秒內就緒。</item>
+    <item>更飽滿的聲音：低音增強會在不失真的情況下，將每種語音的低頻提升 8 dB。</item>
+    <item>已修正：Announcer 和 Marcelo 語音變體會導致引擎無聲，兩個變體被重複列出；匯入 eSpeak 字典現在使用 Android 的檔案選擇器，並儲存到引擎讀取的位置。</item>
+    <item>應用程式名稱為 EspeakZ，應用程式 ID 為 com.espeakz.app，因此可與官方 eSpeak NG 應用程式並存安裝。它有一個可開啟其設定的啟動器圖示。</item>
+    <item>雙語言：同時朗讀兩種語言，一種以拉丁字母書寫，另一種以其他文字書寫，例如英文和阿拉伯文，各由 EspeakZ 或任何已安裝引擎中自己的語音朗讀。每種語言都有自己的語音、語速、音調和音量，因此可以設定很多種語言，並使用其中任意兩種。您可以選擇由哪個語音讀數字、標點符號和表情符號，兩個語音會無間隙地銜接。</item>
+    <item>回應更快：使用 TalkBack 時，每次要求的第一個聲音會在百分之幾秒內發出，即使在手錶上也是如此，停止會立即生效。</item>
+    <item>EspeakZ 語言：EspeakZ 使用您裝置的語言顯示，預設英文為美式英文，並且可以在所有應用程式中使用同一種語言。</item>
+    <item>超過 6 位的數字可以一位、兩位或三位一組地朗讀。</item>
+    <item>保持 EspeakZ 執行會要求 Android 不對 EspeakZ 進行省電限制。EspeakZ 在螢幕鎖定畫面上也能朗讀。</item>
+    <item>設定中有這個「關於 EspeakZ」畫面，顯示作者、變更、致謝和授權。</item>
+    <item>專案結構和建置方式已變更，讓應用程式也能在 Windows 上建置。</item>
+  </string-array>
+
+  <string name="about_credits_heading">致謝</string>
+  <string-array name="about_credits">
+    <item>EspeakZ 的存在要歸功於 eSpeak NG 專案以及所有為其貢獻的人。</item>
+    <item>eSpeak NG，github.com/espeak-ng/espeak-ng：語音引擎、所有語言的語音資料和原版 Android 應用程式，由 Reece H. Dunn 和 eSpeak NG 貢獻者維護。</item>
+    <item>eSpeak，由 Jonathan Duddington 建立，eSpeak NG 以它為基礎。</item>
+    <item>eSpeak NG Android 應用程式，作者為 Reece H. Dunn、Beka Gozalishvili、Alexandr Epaneshnikov 和 eSpeak NG 貢獻者，包含來自 Google Inc. 和 Android Open Source Project 的程式碼。</item>
+    <item>eSpeak NG 及其 Android 應用程式的語言維護者和翻譯者。</item>
+    <item>Bill Cox 的 Sonic 程式庫，它使高語速成為可能。</item>
+    <item>JetBrains 的 Kotlin 標準程式庫，採用 Apache License 2.0 授權。</item>
+  </string-array>
+
+  <string name="about_license_heading">授權</string>
+  <string-array name="about_license">
+    <item>EspeakZ，copyright 2026 ZAPPS SOFTWARE LTD。基於 eSpeak NG，copyright 2005 to 2026 Jonathan Duddington、Reece H. Dunn 和 eSpeak NG 貢獻者。</item>
+    <item>EspeakZ 是自由開放原始碼軟體：您可以依據 GNU General Public License 第 3 版或任何更新版本的條款重新散布和修改它，該授權與 eSpeak NG 相同。授權內容見 www.gnu.org/licenses/gpl-3.0.html。</item>
+    <item>Android 應用程式原始碼和 Sonic 程式庫採用 Apache License 2.0。部分內容保留各自的授權：來自 eSpeak NG 的檔案採用 2 條款 BSD 授權，Unicode 資料採用 Unicode 授權，NV Access Limited 的 Klatt 語音播放器採用 GNU General Public License 第 3 版或更新版本。</item>
+    <item>在法律允許的範圍內，EspeakZ 不提供任何保證。</item>
+    <item>EspeakZ 包含所有變更的完整原始碼位於 github.com/zapps-ltd/EspeakZ，採用相同的授權。在設定中開啟 GitHub 上的 EspeakZ 即可前往。</item>
+    <item>Android 是 Google LLC 的商標。</item>
+  </string-array>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">אודות EspeakZ</string>
+  <string name="about_author">מאת zapps-ltd</string>
+  <string name="about_summary">מאת zapps-ltd, גרסה %s</string>
+  <string name="about_version">גרסה %s</string>
+  <string name="about_team_heading">צוות המפתחים</string>
+  <string name="about_team">מפתחי zapps.ltd: %1$s ו-%2$s</string>
+  <string name="about_contact_heading">יצירת קשר</string>
+  <string name="about_email">שליחת אימייל אל %1$s</string>
+  <string name="about_home">ביקור ב-zapps.ltd</string>
+  <string name="about_copyright">זכויות יוצרים © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ הוא מנוע הקראה (טקסט לדיבור) עבור Android. הוא פיצול של אפליקציית eSpeak NG ל-Android ומדבר באמצעות מנוע הדיבור eSpeak NG, שתומך ביותר מ-100 שפות וניבים. EspeakZ אינו האפליקציה הרשמית של eSpeak NG ואינו מאושר על ידי הפרויקט eSpeak NG. הוא מותקן לצד האפליקציה הרשמית.</string>
+
+  <string name="about_privacy_heading">פרטיות</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ אינו אוסף שום נתונים ואינו מתחבר לאינטרנט מכל סיבה שהיא. הוא גם אינו מבקש הרשאת אינטרנט.</item>
+    <item>מה ש-EspeakZ מקריא, ההגדרות שלו ונתוני הקולות נשארים במכשיר שלך.</item>
+    <item>עם שתי שפות במקביל, EspeakZ מעביר את הטקסט בשפה השנייה למנוע שבחרת את הקול שלו. תנאי הפרטיות של אותו מנוע חלים עליו, וקול שמסומן «דורש אינטרנט» שולח את הטקסט הזה לספק שלו.</item>
+  </string-array>
+
+  <string name="about_goals_heading">אודות הפיצול</string>
+  <string-array name="about_goals">
+    <item>מטרה: דיבור כבר מהבקשה הראשונה אחרי ההתקנה, בלי לכבות ולהפעיל את המנוע ובלי שלב התקנה נוסף. בוצע.</item>
+    <item>מטרה: Klatt גרסה 6 כווריאנט הקול ברירת המחדל. בוצע.</item>
+    <item>מטרה: כתיבה מחדש של קוד ה-Android של האפליקציה ב-Kotlin. בוצע.</item>
+  </string-array>
+
+  <string name="about_changes_heading">שינויים לעומת eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ התחיל מ-eSpeak NG גרסה 1.53.0 מ-22 בספטמבר 2026. השינויים שלהלן בוצעו באוקטובר 2026.</item>
+    <item>דיבור מהבקשה הראשונה: נתוני הקולות מותקנים ברגע שהאפליקציה מתחילה, והמנוע ממתין להם במקום להישאר שקט, כך שהמילים הראשונות של קורא המסך מושמעות.</item>
+    <item>שפות קול: בהפעלה הראשונה מותקנות שפות המכשיר שלך ואנגלית. אפשר להוסיף או להסיר שפות בהגדרות, שפות קול.</item>
+    <item>Klatt גרסה 6 הוא וריאנט הקול ברירת המחדל.</item>
+    <item>האפליקציה כתובה ב-Kotlin, והמנוע אינו מופעל מחדש בזמן שהוא מדבר.</item>
+    <item>הפעלה מהירה יותר: אחרי ההפעלה הראשונה המנוע מוכן בתוך כמה מאיות שנייה, אפילו בשעון.</item>
+    <item>קול מלא יותר: הגברת בס מעלה את התדרים הנמוכים של כל קול ב-8 דציבל, בלי עיוות.</item>
+    <item>תוקן: הווריאנטים Announcer ו-Marcelo השאירו את המנוע שקט, שני וריאנטים הופיעו פעמיים ברשימה, וייבוא מילון eSpeak משתמש עכשיו בבוחר הקבצים של Android ושומר במקום שבו המנוע קורא.</item>
+    <item>שם האפליקציה הוא EspeakZ, עם מזהה האפליקציה com.espeakz.app, ולכן היא מותקנת לצד אפליקציית eSpeak NG הרשמית. יש לה סמל הפעלה שפותח את ההגדרות שלה.</item>
+    <item>שתי שפות במקביל: שתי שפות מוקראות יחד, אחת כתובה באותיות לטיניות ואחת באלפבית אחר, כמו אנגלית וערבית, כל אחת בקול משלה מ-EspeakZ או מכל מנוע מותקן. לכל שפה יש קול, קצב דיבור, גובה צליל ועוצמת קול משלה, כך שאפשר להגדיר רבות ולהשתמש בכל שתיים. אפשר לבחור איזה קול מקריא מספרים, סימני פיסוק ואימוג\'ים, ושני הקולות באים זה אחרי זה בלי הפסקות.</item>
+    <item>תשובות מהירות יותר: עם TalkBack הצליל הראשון של כל בקשה מגיע בתוך כמה מאיות שנייה, אפילו בשעון, ועצירה נכנסת לתוקף מיד.</item>
+    <item>שפת EspeakZ: EspeakZ מדבר בשפת המכשיר שלך, כאשר אנגלית רגילה היא אנגלית אמריקאית, ויכול להשתמש בשפה אחת בכל האפליקציות.</item>
+    <item>אפשר להקריא מספרים ארוכים מ-6 ספרות ספרה אחת, שתיים או שלוש בכל פעם.</item>
+    <item>האפשרות להשאיר את EspeakZ פועל מבקשת מ-Android להוציא את EspeakZ מחיסכון בסוללה. EspeakZ מדבר גם במסך הנעילה.</item>
+    <item>בהגדרות יש את מסך אודות EspeakZ הזה, עם היוצר, השינויים, הקרדיטים והרישיון.</item>
+    <item>מבנה הפרויקט ותהליך הבנייה שונו כך שאפשר לבנות את האפליקציה גם ב-Windows.</item>
+  </string-array>
+
+  <string name="about_credits_heading">קרדיטים</string>
+  <string-array name="about_credits">
+    <item>EspeakZ קיים בזכות עבודתו של הפרויקט eSpeak NG וכל מי שתרם לו.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: מנוע הדיבור, נתוני הקולות לכל שפה ואפליקציית ה-Android המקורית, בתחזוקת Reece H. Dunn ותורמי eSpeak NG.</item>
+    <item>eSpeak, שנוצר על ידי Jonathan Duddington, שעליו מבוסס eSpeak NG.</item>
+    <item>אפליקציית eSpeak NG ל-Android, מאת Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov ותורמי eSpeak NG, עם קוד מ-Google Inc. ומ-Android Open Source Project.</item>
+    <item>מתחזקי השפות והמתרגמים של eSpeak NG ושל אפליקציית ה-Android שלו.</item>
+    <item>ספריית Sonic מאת Bill Cox, שמאפשרת קצבי דיבור גבוהים.</item>
+    <item>הספרייה הסטנדרטית של Kotlin מאת JetBrains, תחת Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">רישיון</string>
+  <string-array name="about_license">
+    <item>EspeakZ, זכויות יוצרים 2026 ZAPPS SOFTWARE LTD. מבוסס על eSpeak NG, זכויות יוצרים 2005 עד 2026 Jonathan Duddington, Reece H. Dunn ותורמי eSpeak NG.</item>
+    <item>EspeakZ הוא תוכנה חופשית ופתוחה: אפשר להפיץ אותה מחדש ולשנות אותה בהתאם לתנאי GNU General Public License, גרסה 3 או כל גרסה מאוחרת יותר, אותו רישיון של eSpeak NG. הרישיון נמצא בכתובת www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>קוד אפליקציית Android וספריית Sonic מורשים לפי Apache License 2.0. חלקים מסוימים שומרים על רישיונות משלהם: קבצים מ-eSpeak NG לפי רישיון BSD בן 2 סעיפים, נתוני Unicode לפי רישיון Unicode, ונגן הדיבור Klatt של NV Access Limited לפי GNU General Public License גרסה 3 ואילך.</item>
+    <item>EspeakZ מסופק ללא כל אחריות, במידה המותרת על פי חוק.</item>
+    <item>קוד המקור המלא של EspeakZ, עם כל השינויים, נמצא בכתובת github.com/zapps-ltd/EspeakZ, תחת אותו רישיון. האפשרות הגדרות, EspeakZ ב-GitHub פותחת אותו.</item>
+    <item>Android הוא סימן מסחרי של Google LLC.</item>
+  </string-array>
+</resources>

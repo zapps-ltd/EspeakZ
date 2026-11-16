@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  * Copyright (C) 2022 Beka Gozalishvili
  * Copyright (C) 2013 Reece H. Dunn
  * Copyright (C) 2011 The Android Open Source Project
@@ -166,7 +166,7 @@ class TtsSettingsActivity : PreferenceActivity() {
                 voices = voices,
                 labels = voices.associateWith { voiceLabel(storage, it) },
                 languages = EspeakData.availableLanguages(storage),
-                installed = EspeakData.installedDictionaries(storage),
+                installed = LanguageSettings.languagesInUse(storage, prefs),
                 variant = settings.voiceVariant,
                 punctuationLevel = settings.punctuationLevel,
                 punctuationCharacters = settings.punctuationCharacters,
@@ -279,7 +279,7 @@ class TtsSettingsActivity : PreferenceActivity() {
             pref.key = PREF_VOICE_LANGUAGES
             pref.setTitle(R.string.voice_languages_title)
             pref.setDialogTitle(R.string.voice_languages_title)
-            pref.languages = state.languages.filter { it.dictionary != EspeakData.ENGLISH }
+            pref.languages = state.languages
             pref.installed = state.installed
             pref.summary = installedSummary(context, state.installed)
             pref.onLanguagesChosen = { chosen -> applyVoiceLanguages(fragment, pref, chosen) }
@@ -296,8 +296,10 @@ class TtsSettingsActivity : PreferenceActivity() {
             val context = fragment.activity
             val storage = EspeakData.storage(context)
             pref.setSummary(R.string.voice_languages_installing)
+            val before = pref.installed
             Thread({
                 val ok = EspeakData.setInstalledDictionaries(storage, chosen)
+                LanguageSettings.applyLanguages(storage, PreferenceManager.getDefaultSharedPreferences(storage), before, chosen)
                 val state = loadEngineState(context, storage)
                 mainHandler.post {
                     if (isGone(context) || !fragment.isAdded) return@post
@@ -317,6 +319,12 @@ class TtsSettingsActivity : PreferenceActivity() {
             (fragment.findPreference(PREF_VOICE_LANGUAGES) as? VoiceLanguagesPreference)?.let {
                 it.installed = state.installed
                 it.summary = installedSummary(fragment.activity, state.installed)
+            }
+            (fragment.findPreference(EspeakZLanguage.PREF_VOICE) as? ChoiceListPreference)?.let {
+                bindEspeakZLanguage(fragment.activity, it, state)
+                // The summary shows the entry, which may now read differently,
+                // or be gone with its language: then the device's language.
+                it.summary = it.entry ?: it.entries.firstOrNull()
             }
             val pref = fragment.findPreference(LanguageSettings.PREF_SUPPORTED_LANGUAGES) as? SupportedLanguagesPreference
                 ?: return
@@ -396,23 +404,33 @@ class TtsSettingsActivity : PreferenceActivity() {
 
         /** EspeakZ's own language: the device's unless the user picks a voice. */
         fun createEspeakZLanguagePreference(context: Context, state: EngineState): Preference {
-            val voices = state.voices.sortedWith(compareBy(String.CASE_INSENSITIVE_ORDER) { state.labels[it] ?: it.name })
-            val device = EspeakZLanguage.deviceVoice(state.voices)
-            val deviceLabel = context.getString(
-                R.string.espeakz_language_device,
-                device?.let { state.labels[it] ?: it.name }.orEmpty(),
-            )
             val pref = ChoiceListPreference(context)
             pref.key = EspeakZLanguage.PREF_VOICE
             pref.setTitle(R.string.espeakz_language_title)
             pref.setDialogTitle(R.string.espeakz_language_title)
-            pref.entries = (listOf(deviceLabel) + voices.map { state.labels[it] ?: it.name }).toTypedArray()
-            pref.entryValues = (listOf(EspeakZLanguage.DEVICE) + voices.map { it.name }).toTypedArray()
+            bindEspeakZLanguage(context, pref, state)
             pref.setDefaultValue(EspeakZLanguage.DEVICE)
             pref.isPersistent = true
             pref.entryAsSummary = true
             return pref
         }
+
+        /** Offers the voices that are on, as TtsService reports them, and names the one the device's language picks. */
+        fun bindEspeakZLanguage(context: Context, pref: ChoiceListPreference, state: EngineState) {
+            val reported = reportedVoices(context, state.voices)
+            val voices = reported.sortedWith(compareBy(String.CASE_INSENSITIVE_ORDER) { state.labels[it] ?: it.name })
+            val device = EspeakZLanguage.deviceVoice(reported)
+            val deviceLabel = context.getString(
+                R.string.espeakz_language_device,
+                device?.let { state.labels[it] ?: it.name }.orEmpty(),
+            )
+            pref.entries = (listOf(deviceLabel) + voices.map { state.labels[it] ?: it.name }).toTypedArray()
+            pref.entryValues = (listOf(EspeakZLanguage.DEVICE) + voices.map { it.name }).toTypedArray()
+        }
+
+        /** The installed voices that are on in Supported languages and Voice languages. */
+        fun reportedVoices(context: Context, voices: List<Voice>): List<Voice> =
+            LanguageSettings.filterVoices(voices, PreferenceManager.getDefaultSharedPreferences(EspeakData.storage(context)))
 
         fun createForceLanguagePreference(context: Context): Preference {
             val pref = CheckBoxPreference(context)
@@ -504,7 +522,7 @@ class TtsSettingsActivity : PreferenceActivity() {
          */
         fun testEspeakZ(context: Context, voices: List<Voice>) {
             val prefs = PreferenceManager.getDefaultSharedPreferences(EspeakData.storage(context))
-            val locale = EspeakZLanguage.voice(prefs, voices)?.locale ?: Locale.getDefault()
+            val locale = EspeakZLanguage.voice(prefs, LanguageSettings.filterVoices(voices, prefs))?.locale ?: Locale.getDefault()
             val text = SpeechSynthesis.getSampleText(context, locale)
             var tts: TextToSpeech? = null
             tts = TextToSpeech(context.applicationContext, { status ->
@@ -626,7 +644,7 @@ class TtsSettingsActivity : PreferenceActivity() {
             return power.isIgnoringBatteryOptimizations(context.packageName)
         }
 
-        const val GITHUB_URL = "https://github.com/iqdz/EspeakZ"
+        const val GITHUB_URL = "https://github.com/zapps-ltd/EspeakZ"
 
         /** Opens EspeakZ's page on GitHub in the browser; EspeakZ itself never goes online. */
         fun createGitHubPreference(context: Context): Preference {

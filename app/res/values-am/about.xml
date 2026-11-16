@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">ስለ EspeakZ</string>
+  <string name="about_author">በ zapps-ltd</string>
+  <string name="about_summary">በ zapps-ltd፣ ስሪት %s</string>
+  <string name="about_version">ስሪት %s</string>
+  <string name="about_team_heading">የገንቢዎች ቡድን</string>
+  <string name="about_team">የ zapps.ltd ገንቢዎች፦ %1$s እና %2$s</string>
+  <string name="about_contact_heading">አግኙን</string>
+  <string name="about_email">ኢሜይል %1$s</string>
+  <string name="about_home">zapps.ltd ን ይጎብኙ</string>
+  <string name="about_copyright">የቅጂ መብት © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ ለ Android የተሠራ ጽሑፍን ወደ ንግግር የሚቀይር ሞተር ነው። የ eSpeak NG Android መተግበሪያ ፎርክ ሲሆን ከ100 በላይ ቋንቋዎችንና ዘዬዎችን በሚደግፈው በ eSpeak NG የንግግር ሞተር ይናገራል። EspeakZ ይፋዊው የ eSpeak NG መተግበሪያ አይደለም፤ በ eSpeak NG ፕሮጀክትም ድጋፍ አልተሰጠውም። ከይፋዊው መተግበሪያ ጎን ለጎን ይጫናል።</string>
+
+  <string name="about_privacy_heading">ግላዊነት</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ ምንም ውሂብ አይሰበስብም፤ በምንም ምክንያት ከበይነመረብ ጋር አይገናኝም። የበይነመረብ ፈቃድ አይጠይቅም።</item>
+    <item>EspeakZ የሚያነበው፣ ቅንብሮቹና የድምፅ ውሂቡ በመሣሪያዎ ላይ ይቆያሉ።</item>
+    <item>በሁለት ቋንቋዎች ሁነታ፣ EspeakZ የሁለተኛውን ቋንቋ ጽሑፍ እርስዎ ለመረጡት ድምፅ ሞተር ይሰጣል። የዚያ ሞተር የራሱ የግላዊነት ውሎች ይመለከቱታል፤ «በይነመረብ ያስፈልገዋል» ተብሎ የተመለከተ ድምፅ ያንን ጽሑፍ ወደ አቅራቢው ይልካል።</item>
+  </string-array>
+
+  <string name="about_goals_heading">ስለ ፎርኩ</string>
+  <string-array name="about_goals">
+    <item>ግብ፦ ከተጫነ በኋላ ከመጀመሪያው ጥያቄ ጀምሮ ንግግር፣ ሞተሩን ሳያጠፉና ሳያበሩ እንዲሁም ተጨማሪ የመጫን ደረጃ ሳይኖር። ተጠናቋል።</item>
+    <item>ግብ፦ Klatt ልዩነት 6 እንደ ነባሪ የድምፅ ልዩነት። ተጠናቋል።</item>
+    <item>ግብ፦ የመተግበሪያው የ Android ኮድ በ Kotlin እንደገና እንዲጻፍ። ተጠናቋል።</item>
+  </string-array>
+
+  <string name="about_changes_heading">ከ eSpeak NG የተደረጉ ለውጦች</string>
+  <string-array name="about_changes">
+    <item>EspeakZ የጀመረው በ22 መስከረም 2026 ከወጣው eSpeak NG 1.53.0 ነው። ከታች ያሉት ለውጦች በጥቅምት 2026 ተደርገዋል።</item>
+    <item>ከመጀመሪያው ጥያቄ ጀምሮ ንግግር፦ የድምፅ ውሂቡ መተግበሪያው እንደጀመረ ይጫናል፤ ሞተሩም ዝም ከማለት ይልቅ ይጠብቀዋል፤ ስለዚህ የማያ ገጽ አንባቢ የመጀመሪያ ቃላት ይነገራሉ።</item>
+    <item>የድምፅ ቋንቋዎች፦ የመጀመሪያው ጅምር የመሣሪያዎን ቋንቋዎችና እንግሊዝኛን ይጭናል። ቋንቋዎችን በቅንብሮች፣ የድምፅ ቋንቋዎች ውስጥ ይጨምሩ ወይም ያስወግዱ።</item>
+    <item>Klatt ልዩነት 6 ነባሪው የድምፅ ልዩነት ነው።</item>
+    <item>መተግበሪያው በ Kotlin ተጽፏል፤ ሞተሩም በሚናገርበት ጊዜ በፍጹም እንደገና አይጀምርም።</item>
+    <item>ፈጣን ጅምር፦ ከመጀመሪያው ጅምር በኋላ፣ ሞተሩ በሰዓት ላይ እንኳ በጥቂት መቶኛ ሰከንዶች ውስጥ ዝግጁ ይሆናል።</item>
+    <item>የተሟላ ድምፅ፦ የባስ ማጎልበቻ የእያንዳንዱን ድምፅ ዝቅተኛ ድግግሞሾች ያለ መዛባት በ8 dB ከፍ ያደርጋል።</item>
+    <item>ተስተካክሏል፦ Announcer እና Marcelo የድምፅ ልዩነቶች ሞተሩን ዝም ያስቀሩ ነበር፣ ሁለት ልዩነቶች ሁለት ጊዜ ተዘርዝረው ነበር፣ እና የ eSpeak መዝገበ ቃላት አስመጣ አሁን የ Android ፋይል መራጭን ይጠቀማል፤ ሞተሩ በሚያነብበት ቦታም ያስቀምጣል።</item>
+    <item>መተግበሪያው EspeakZ ተብሎ ተሰይሟል፤ የመተግበሪያ መታወቂያው com.espeakz.app ነው፤ ስለዚህ ከይፋዊው eSpeak NG መተግበሪያ ጎን ለጎን ይጫናል። ቅንብሮቹን የሚከፍት የማስጀመሪያ አዶ አለው።</item>
+    <item>ሁለት ቋንቋዎች፦ ሁለት ቋንቋዎች በአንድ ጊዜ ይነበባሉ፤ አንዱ በላቲን ፊደላት የተጻፈ፣ ሌላው በሌላ ፊደል የተጻፈ፣ ለምሳሌ እንግሊዝኛና አረብኛ፣ እያንዳንዳቸው ከ EspeakZ ወይም ከማንኛውም የተጫነ ሞተር በራሱ ድምፅ። እያንዳንዱ ቋንቋ የራሱን ድምፅ፣ የንግግር ፍጥነት፣ ድምፅ ቅጥነትና ድምፅ መጠን ይይዛል፤ ስለዚህ ብዙዎች ሊዘጋጁ ማንኛቸውም ሁለት ሊያገለግሉ ይችላሉ። ቁጥሮችን፣ ሥርዓተ ነጥቦችንና ኢሞጂዎችን የትኛው ድምፅ እንደሚያነብ እርስዎ ይመርጣሉ፤ ሁለቱ ድምፆችም ያለ ክፍተት ይቀጣጠላሉ።</item>
+    <item>ፈጣን ምላሾች፦ በ TalkBack፣ የእያንዳንዱ ጥያቄ የመጀመሪያ ድምፅ በሰዓት ላይ እንኳ በጥቂት መቶኛ ሰከንዶች ውስጥ ይመጣል፤ ማቆምም ወዲያውኑ ይሠራል።</item>
+    <item>የ EspeakZ ቋንቋ፦ EspeakZ በመሣሪያዎ ቋንቋ ይናገራል፤ ተራ እንግሊዝኛ የአሜሪካ እንግሊዝኛ ነው፤ እንዲሁም በሁሉም መተግበሪያዎች ውስጥ አንድ ቋንቋ መጠቀም ይችላል።</item>
+    <item>ከ6 አሃዞች በላይ የሆኑ ቁጥሮች አንድ፣ ሁለት ወይም ሦስት አሃዝ በአንድ ጊዜ ሊነበቡ ይችላሉ።</item>
+    <item>EspeakZ ን እንዲሠራ አቆይ Android EspeakZ ን ከባትሪ ቁጠባ እንዲያስቀር ይጠይቃል። EspeakZ በመቆለፊያ ማያ ገጽ ላይም ይናገራል።</item>
+    <item>ቅንብሮቹ ደራሲውን፣ ለውጦቹን፣ ምስጋናዎቹንና ፈቃዱን የያዘ ይህ ስለ EspeakZ ማያ ገጽ አላቸው።</item>
+    <item>መተግበሪያው በ Windows ላይም እንዲገነባ የፕሮጀክቱ አቀማመጥና ግንባታው ተለውጠዋል።</item>
+  </string-array>
+
+  <string name="about_credits_heading">ምስጋናዎች</string>
+  <string-array name="about_credits">
+    <item>EspeakZ ያለው በ eSpeak NG ፕሮጀክትና በእሱ ላይ አስተዋጽኦ ባደረጉ ሁሉ ሥራ ምክንያት ነው።</item>
+    <item>eSpeak NG፣ github.com/espeak-ng/espeak-ng፦ የንግግር ሞተሩ፣ የእያንዳንዱ ቋንቋ የድምፅ ውሂብና የመጀመሪያው የ Android መተግበሪያ፣ በ Reece H. Dunn እና በ eSpeak NG አስተዋጽዖ አበርካቾች የሚጠበቅ።</item>
+    <item>eSpeak NG የተመሠረተበት፣ በ Jonathan Duddington የተፈጠረው eSpeak።</item>
+    <item>የ eSpeak NG Android መተግበሪያ፣ በ Reece H. Dunn፣ Beka Gozalishvili፣ Alexandr Epaneshnikov እና በ eSpeak NG አስተዋጽዖ አበርካቾች፣ ከ Google Inc. እና ከ Android Open Source Project በተወሰደ ኮድ።</item>
+    <item>የ eSpeak NG እና የ Android መተግበሪያው የቋንቋ ጠባቂዎችና ተርጓሚዎች።</item>
+    <item>ከፍተኛ የንግግር ፍጥነቶችን የሚያስችለው በ Bill Cox የተሠራው Sonic ላይብረሪ።</item>
+    <item>በ JetBrains የተሠራው የ Kotlin መደበኛ ላይብረሪ፣ በ Apache License 2.0 ስር።</item>
+  </string-array>
+
+  <string name="about_license_heading">ፈቃድ</string>
+  <string-array name="about_license">
+    <item>EspeakZ፣ የቅጂ መብት 2026 ZAPPS SOFTWARE LTD. በ eSpeak NG ላይ የተመሠረተ፣ የቅጂ መብት ከ2005 እስከ 2026 Jonathan Duddington፣ Reece H. Dunn እና የ eSpeak NG አስተዋጽዖ አበርካቾች።</item>
+    <item>EspeakZ ነፃና ክፍት ምንጭ ሶፍትዌር ነው፦ ከ eSpeak NG ጋር አንድ ፈቃድ በሆነው በ GNU General Public License፣ ስሪት 3 ወይም በማንኛውም ተከታይ ስሪት ውሎች መሠረት እንደገና ማሰራጨትና መቀየር ይችላሉ። ፈቃዱ www.gnu.org/licenses/gpl-3.0.html ላይ ነው።</item>
+    <item>የ Android መተግበሪያው ምንጮች እና የ Sonic ላይብረሪ በ Apache License 2.0 ስር ናቸው። አንዳንድ ክፍሎች የራሳቸውን ፈቃድ ይዘው ይቆያሉ፤ ከ eSpeak NG የመጡ ፋይሎች በ 2 አንቀጽ BSD ፈቃድ፣ የ Unicode ውሂብ በ Unicode ፈቃድ፣ እና በ NV Access Limited የተሠራው የ Klatt ንግግር ማጫወቻ በ GNU General Public License ስሪት 3 ወይም ከዚያ በኋላ ባለው ስር ናቸው።</item>
+    <item>EspeakZ በሕግ በተፈቀደው መጠን ምንም ዋስትና የለውም።</item>
+    <item>የ EspeakZ ሙሉ የምንጭ ኮድ ከሁሉም ለውጦች ጋር github.com/zapps-ltd/EspeakZ ላይ በተመሳሳይ ፈቃድ ይገኛል። ቅንብሮች፣ EspeakZ በ GitHub ላይ ይከፍተዋል።</item>
+    <item>Android የ Google LLC የንግድ ምልክት ነው።</item>
+  </string-array>
+</resources>

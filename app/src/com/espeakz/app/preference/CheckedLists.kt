@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@ package com.espeakz.app.preference
 
 import android.view.KeyEvent
 import android.view.View
+import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Checkable
 import android.widget.ListView
 
@@ -36,6 +37,34 @@ internal fun ListView.reportCheckedStateOnClick() {
         (view as? Checkable)?.isChecked = isItemChecked(position)
     }
 }
+
+/**
+ * Opens a dialog's list on its entry [index], the current choice: scrolled
+ * to the top of the list, with the keyboard, the D-pad and a screen reader
+ * all starting there, so that moving back and forward from it reaches every
+ * other entry.
+ *
+ * A watch shows the entry below the top of its round screen, with the entry
+ * before it above; a screen reader left to itself then starts on that
+ * earlier entry, which is not the checked one, so its focus is put on the
+ * entry here. Any header rows a dialog adds to its list are counted.
+ */
+internal fun ListView.openOn(index: Int) {
+    if (index < 0) return
+    post {
+        val position = index + headerViewsCount
+        // The first entry stays below the title a watch shows above it.
+        if (index > 0) setSelection(position)
+        requestFocus()
+        // Once the list is laid out at its new place.
+        postDelayed({
+            getChildAt(position - firstVisiblePosition)
+                ?.performAccessibilityAction(AccessibilityNodeInfo.ACTION_ACCESSIBILITY_FOCUS, null)
+        }, SCREEN_READER_FOCUS_DELAY_MS)
+    }
+}
+
+private const val SCREEN_READER_FOCUS_DELAY_MS = 350L
 
 /**
  * Lets Tab and Shift+Tab leave a list for the controls around it, such as a

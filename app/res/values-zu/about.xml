@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Mayelana ne-EspeakZ</string>
+  <string name="about_author">Ngu-zapps-ltd</string>
+  <string name="about_summary">Ngu-zapps-ltd, uhlelo %s</string>
+  <string name="about_version">Uhlelo %s</string>
+  <string name="about_team_heading">Ithimba labathuthukisi</string>
+  <string name="about_team">Abathuthukisi be-zapps.ltd: %1$s no-%2$s</string>
+  <string name="about_contact_heading">Xhumana nathi</string>
+  <string name="about_email">I-imeyili %1$s</string>
+  <string name="about_home">Vakashela i-zapps.ltd</string>
+  <string name="about_copyright">Ilungelo lokushicilela © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">I-EspeakZ yinjini yokuguqula umbhalo ube inkulumo ye-Android. Iyisitsha esikhishwe kuhlelo lokusebenza lwe-eSpeak NG ye-Android futhi ikhuluma ngenjini yenkulumo ye-eSpeak NG, esekela izilimi nezinhlobo zokubizwa ezingaphezu kuka-100. I-EspeakZ ayisona isilinganiso esisemthethweni se-eSpeak NG futhi ayigunyazwanga yiphrojekthi ye-eSpeak NG. Ifakwa eduze kohlelo lokusebenza olusemthethweni.</string>
+
+  <string name="about_privacy_heading">Ubumfihlo</string>
+  <string-array name="about_privacy">
+    <item>I-EspeakZ ayiqoqi mininingwane futhi ayixhumi ku-inthanethi ngenxa yanoma yini. Ayicelli nemvume ye-inthanethi.</item>
+    <item>Lokho okufundwa yi-EspeakZ, amasethingi ayo nedatha yezwi kuhlala kudivayisi yakho.</item>
+    <item>Ngezilimi ezimbili, i-EspeakZ inikeza umbhalo wolimi lwesibili kunjini oyikhethele izwi layo. Imigomo yobumfihlo yayo leyo njini iyasebenza kuwo, futhi izwi elimakwe ngokuthi «idinga i-inthanethi» lithumela lowo mbhalo kumhlinzeki walo.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Mayelana nesitsha</string>
+  <string-array name="about_goals">
+    <item>Inhloso: inkulumo kusukela esicelweni sokuqala emva kokufaka, ngaphandle kokuvala nokuvula injini futhi ngaphandle kwesinyathelo esengeziwe sokufaka. Kwenziwe.</item>
+    <item>Inhloso: i-Klatt uhlobo 6 njengohlobo lwezwi oluzenzakalelayo. Kwenziwe.</item>
+    <item>Inhloso: ikhodi ye-Android yohlelo lokusebenza ibhalwe kabusha nge-Kotlin. Kwenziwe.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Izinguquko kusukela ku-eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>I-EspeakZ iqale ku-eSpeak NG 1.53.0 ka-22 Septemba 2026. Izinguquko ezingezansi zenziwe ngo-Okthoba 2026.</item>
+    <item>Inkulumo kusukela esicelweni sokuqala: idatha yezwi iyafakwa lapho nje uhlelo lokusebenza luqala, futhi injini iyayilinda esikhundleni sokuthula, ngakho amazwi okuqala esifundi sesikrini ayakhulunywa.</item>
+    <item>Izilimi zezwi: ukuqala kokuqala kufaka izilimi zedivayisi yakho nesiNgisi. Engeza noma susa izilimi kuMasethingi, Izilimi zezwi.</item>
+    <item>I-Klatt uhlobo 6 yiyo uhlobo lwezwi oluzenzakalelayo.</item>
+    <item>Uhlelo lokusebenza lubhalwe nge-Kotlin, futhi injini ayiqali kabusha ngenkathi ikhuluma.</item>
+    <item>Ukuqala okusheshayo: ngemva kokuqala kokuqala, injini ikulungele emahlandla ambalwa kwamakhulu esekhondi, ngisho nasewashini.</item>
+    <item>Izwi eligcwele kakhudlwana: ukuthuthukiswa kwe-bass kuphakamisa amafrikhwensi aphansi ezwi ngalinye nge-8 dB, ngaphandle kokuhlanekezela.</item>
+    <item>Kulungisiwe: izinhlobo zezwi i-Announcer ne-Marcelo zazishiya injini ithule, izinhlobo ezimbili zazibhalwe kabili, futhi manje ukungenisa isichazamazwi se-eSpeak kusebenzisa isikhethi samafayela se-Android futhi kugcina lapho injini ifunda khona.</item>
+    <item>Uhlelo lokusebenza luqanjwe i-EspeakZ, ngesihlonzi sohlelo lokusebenza i-com.espeakz.app, ngakho lufakwa eduze kohlelo lokusebenza olusemthethweni lwe-eSpeak NG. Lunesithonjana sesiqalisi esivula amasethingialo.</item>
+    <item>Izilimi ezimbili: izilimi ezimbili zifundwa ngesikhathi esisodwa, olunye lubhalwe ngezinhlamvu zesiLatini nolunye ngeyinye ialfabhethi, njengesiNgisi nesiArabhu, ngalunye ngezwi laso ukusuka ku-EspeakZ noma kunoma iyiphi injini efakiwe. Ulimi ngalunye luzigcinela izwi laso, isivinini sokukhuluma, ukuphakama kwezwi nevolumu, ngakho ezinengi zingasethwa futhi ezimbili zisetshenziswe. Wena ukhetha ukuthi yiliphi izwi elifunda izinombolo, ukubhala ngezimpawu nama-emoji, futhi amazwi amabili alandelana ngaphandle kwezikhala.</item>
+    <item>Izimpendulo ezisheshayo: nge-TalkBack, umsindo wokuqala wesicelo ngasinye uza emahlandla ambalwa kwamakhulu esekhondi, ngisho nasewashini, futhi ukumisa kuyasebenza ngokushesha.</item>
+    <item>Ulimi lwe-EspeakZ: i-EspeakZ ikhuluma ngolimi lwedivayisi yakho, kanti isiNgisi esijwayelekile yisiNgisi saseMelika, futhi ingasebenzisa ulimi olulodwa kuzo zonke izinhlelo zokusebenza.</item>
+    <item>Izinombolo ezinde kuno-6 wezinombolo zingafundwa inombolo eyodwa, ezimbili noma ezintathu ngesikhathi.</item>
+    <item>Gcina i-EspeakZ isebenza icela i-Android ukuthi ishiye i-EspeakZ ngaphandle kokonga ibhethri. I-EspeakZ ikhuluma nasesikrinini sokukhiya.</item>
+    <item>Amasethingi anale sikrini esithi Mayelana ne-EspeakZ esinomlobi, izinguquko, abathathwe njengabanikelayo nelayisense.</item>
+    <item>Isakhiwo sephrojekthi nokwakha kwashintshwa ukuze uhlelo lokusebenza lwakheke ne-Windows.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Abanikelayo</string>
+  <string-array name="about_credits">
+    <item>I-EspeakZ ikhona ngenxa yomsebenzi wephrojekthi ye-eSpeak NG nabo bonke abanikele kuyo.</item>
+    <item>I-eSpeak NG, github.com/espeak-ng/espeak-ng: injini yenkulumo, idatha yezwi yazo zonke izilimi nohlelo lokusebenza lwangempela lwe-Android, ongamelwa nguReece H. Dunn nabanikeli be-eSpeak NG.</item>
+    <item>I-eSpeak, eyadalwa nguJonathan Duddington, i-eSpeak NG esekelwe kuyo.</item>
+    <item>Uhlelo lokusebenza lwe-eSpeak NG ye-Android, lukaReece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov nabanikeli be-eSpeak NG, nekhodi evela ku-Google Inc. nase-Android Open Source Project.</item>
+    <item>Abagcini bezilimi nabahumushi be-eSpeak NG nohlelo lwayo lokusebenza lwe-Android.</item>
+    <item>Umtapo wezincwadi we-Sonic kaBill Cox, owenza amazinga aphezulu enkulumo ahlale.</item>
+    <item>Umtapo wezincwadi ojwayelekile we-Kotlin ka-JetBrains, ngaphansi kwe-Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Ilayisense</string>
+  <string-array name="about_license">
+    <item>I-EspeakZ, ilungelo lokushicilela 2026 ZAPPS SOFTWARE LTD. Isekelwe ku-eSpeak NG, ilungelo lokushicilela 2005 kuya ku-2026 Jonathan Duddington, Reece H. Dunn nabanikeli be-eSpeak NG.</item>
+    <item>I-EspeakZ iyisofthiwe yamahhala nevulekile: ungayisabalalisa futhi uyiguqule ngaphansi kwemigomo ye-GNU General Public License, uhlelo 3 noma noma yiluphi uhlelo olwalandela, okuyilayisense efanayo ne-eSpeak NG. Ilayisense itholakala ku-www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Imithombo yohlelo lokusebenza lwe-Android nomtapo wezincwadi we-Sonic ingaphansi kwe-Apache License 2.0. Ezinye izingxenye zigcina amalayisense azo: amafayela avela ku-eSpeak NG angaphansi kwelayisense ye-BSD enemigomo engu-2, idatha ye-Unicode ingaphansi kwelayisense ye-Unicode, kanti isidlali senkulumo se-Klatt esenziwe yi-NV Access Limited singaphansi kwe-GNU General Public License inguqulo 3 noma eyakamuva.</item>
+    <item>I-EspeakZ iza ngaphandle kwesiqinisekiso, ngezinga elivunyelwe yisimiso somthetho.</item>
+    <item>Ikhodi yomthombo ephelele ye-EspeakZ, nazo zonke izinguquko, itholakala ku-github.com/zapps-ltd/EspeakZ, ngaphansi kwelayisense efanayo. Amasethingi, i-EspeakZ ku-GitHub ayivula.</item>
+    <item>I-Android uphawu lokuhweba lwe-Google LLC.</item>
+  </string-array>
+</resources>

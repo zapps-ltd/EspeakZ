@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">เกี่ยวกับ EspeakZ</string>
+  <string name="about_author">โดย zapps-ltd</string>
+  <string name="about_summary">โดย zapps-ltd เวอร์ชัน %s</string>
+  <string name="about_version">เวอร์ชัน %s</string>
+  <string name="about_team_heading">ทีมนักพัฒนา</string>
+  <string name="about_team">นักพัฒนา zapps.ltd: %1$s และ %2$s</string>
+  <string name="about_contact_heading">ติดต่อ</string>
+  <string name="about_email">อีเมล %1$s</string>
+  <string name="about_home">เยี่ยมชม zapps.ltd</string>
+  <string name="about_copyright">ลิขสิทธิ์ © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ เป็นเอนจินแปลงข้อความเป็นเสียงพูดสำหรับ Android เป็นฟอร์กของแอป eSpeak NG สำหรับ Android และพูดด้วยเอนจินเสียงพูด eSpeak NG ซึ่งรองรับมากกว่า 100 ภาษาและสำเนียง EspeakZ ไม่ใช่แอป eSpeak NG อย่างเป็นทางการ และไม่ได้รับการรับรองจากโปรเจกต์ eSpeak NG ติดตั้งควบคู่กับแอปอย่างเป็นทางการได้</string>
+
+  <string name="about_privacy_heading">ความเป็นส่วนตัว</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ ไม่เก็บข้อมูลใดๆ และไม่เชื่อมต่ออินเทอร์เน็ตไม่ว่ากรณีใด และไม่ขอสิทธิ์อินเทอร์เน็ต</item>
+    <item>สิ่งที่ EspeakZ อ่าน การตั้งค่า และข้อมูลเสียงจะอยู่บนอุปกรณ์ของคุณเท่านั้น</item>
+    <item>เมื่อใช้สองภาษาพร้อมกัน EspeakZ จะส่งข้อความในภาษาที่สองให้เอนจินที่มีเสียงที่คุณเลือก ข้อกำหนดความเป็นส่วนตัวของเอนจินนั้นจะมีผลกับข้อความดังกล่าว และเสียงที่ระบุว่า «ต้องใช้อินเทอร์เน็ต» จะส่งข้อความนั้นไปยังผู้ให้บริการของเสียง</item>
+  </string-array>
+
+  <string name="about_goals_heading">เกี่ยวกับฟอร์ก</string>
+  <string-array name="about_goals">
+    <item>เป้าหมาย: พูดได้ตั้งแต่คำขอแรกหลังติดตั้ง โดยไม่ต้องปิดและเปิดเอนจิน และไม่ต้องมีขั้นตอนติดตั้งเพิ่ม ทำเสร็จแล้ว</item>
+    <item>เป้าหมาย: Klatt รูปแบบที่ 6 เป็นรูปแบบเสียงเริ่มต้น ทำเสร็จแล้ว</item>
+    <item>เป้าหมาย: เขียนโค้ด Android ของแอปใหม่ด้วย Kotlin ทำเสร็จแล้ว</item>
+  </string-array>
+
+  <string name="about_changes_heading">การเปลี่ยนแปลงจาก eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ เริ่มจาก eSpeak NG 1.53.0 ลงวันที่ 22 กันยายน 2026 การเปลี่ยนแปลงด้านล่างทำในเดือนตุลาคม 2026</item>
+    <item>พูดตั้งแต่คำขอแรก: ข้อมูลเสียงจะติดตั้งทันทีที่แอปเริ่มทำงาน และเอนจินจะรอข้อมูลนั้นแทนที่จะเงียบ ทำให้คำแรกๆ ของโปรแกรมอ่านหน้าจอถูกพูดออกมา</item>
+    <item>ภาษาเสียง: การเริ่มครั้งแรกจะติดตั้งภาษาของอุปกรณ์คุณและภาษาอังกฤษ เพิ่มหรือลบภาษาได้ที่การตั้งค่า ภาษาเสียง</item>
+    <item>Klatt รูปแบบที่ 6 เป็นรูปแบบเสียงเริ่มต้น</item>
+    <item>แอปเขียนด้วย Kotlin และเอนจินจะไม่เริ่มใหม่ขณะกำลังพูด</item>
+    <item>เริ่มเร็วขึ้น: หลังการเริ่มครั้งแรก เอนจินพร้อมใช้งานในเวลาไม่กี่ส่วนร้อยวินาที แม้บนนาฬิกา</item>
+    <item>เสียงเต็มขึ้น: การเพิ่มเสียงเบสยกความถี่ต่ำของทุกเสียงขึ้น 8 เดซิเบลโดยไม่เพี้ยน</item>
+    <item>แก้ไขแล้ว: รูปแบบเสียง Announcer และ Marcelo ทำให้เอนจินเงียบ มีสองรูปแบบที่แสดงซ้ำสองครั้ง และการนำเข้าพจนานุกรม eSpeak ตอนนี้ใช้ตัวเลือกไฟล์ของ Android และบันทึกในที่ที่เอนจินอ่าน</item>
+    <item>แอปชื่อ EspeakZ รหัสแอปพลิเคชัน com.espeakz.app จึงติดตั้งควบคู่กับแอป eSpeak NG อย่างเป็นทางการได้ มีไอคอนตัวเปิดแอปที่เปิดการตั้งค่าของแอป</item>
+    <item>สองภาษาพร้อมกัน: อ่านสองภาษาพร้อมกัน ภาษาหนึ่งเขียนด้วยอักษรละติน อีกภาษาใช้อักษรอื่น เช่น อังกฤษและอาหรับ แต่ละภาษาใช้เสียงของตัวเองจาก EspeakZ หรือเอนจินใดๆ ที่ติดตั้งไว้ แต่ละภาษาเก็บเสียง อัตราการพูด ระดับเสียงสูงต่ำ และระดับเสียงของตัวเอง จึงตั้งค่าไว้ได้หลายภาษาและใช้สองภาษาใดก็ได้ คุณเลือกได้ว่าเสียงไหนอ่านตัวเลข เครื่องหมายวรรคตอน และอีโมจิ และสองเสียงจะต่อกันโดยไม่มีช่องว่าง</item>
+    <item>ตอบเร็วขึ้น: เมื่อใช้ TalkBack เสียงแรกของแต่ละคำขอมาภายในไม่กี่ส่วนร้อยวินาที แม้บนนาฬิกา และการหยุดมีผลทันที</item>
+    <item>ภาษาของ EspeakZ: EspeakZ พูดตามภาษาของอุปกรณ์คุณ โดยภาษาอังกฤษทั่วไปคือภาษาอังกฤษแบบอเมริกัน และใช้ภาษาเดียวในทุกแอปได้</item>
+    <item>ตัวเลขที่ยาวกว่า 6 หลักอ่านได้ครั้งละหนึ่ง สอง หรือสามหลัก</item>
+    <item>ให้ EspeakZ ทำงานอยู่ จะขอให้ Android ไม่นับ EspeakZ ในการประหยัดแบตเตอรี่ EspeakZ พูดบนหน้าจอล็อกด้วย</item>
+    <item>การตั้งค่ามีหน้าจอเกี่ยวกับ EspeakZ นี้ ซึ่งแสดงผู้พัฒนา การเปลี่ยนแปลง เครดิต และสัญญาอนุญาต</item>
+    <item>โครงสร้างโปรเจกต์และการบิลด์ถูกเปลี่ยนเพื่อให้แอปบิลด์บน Windows ได้ด้วย</item>
+  </string-array>
+
+  <string name="about_credits_heading">เครดิต</string>
+  <string-array name="about_credits">
+    <item>EspeakZ เกิดขึ้นได้เพราะผลงานของโปรเจกต์ eSpeak NG และทุกคนที่มีส่วนร่วม</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: เอนจินเสียงพูด ข้อมูลเสียงของทุกภาษา และแอป Android ต้นฉบับ ดูแลโดย Reece H. Dunn และผู้ร่วมพัฒนา eSpeak NG</item>
+    <item>eSpeak สร้างโดย Jonathan Duddington ซึ่งเป็นพื้นฐานของ eSpeak NG</item>
+    <item>แอป eSpeak NG สำหรับ Android โดย Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov และผู้ร่วมพัฒนา eSpeak NG พร้อมโค้ดจาก Google Inc. และ Android Open Source Project</item>
+    <item>ผู้ดูแลภาษาและผู้แปลของ eSpeak NG และแอป Android ของมัน</item>
+    <item>ไลบรารี Sonic โดย Bill Cox ซึ่งทำให้พูดด้วยอัตราเร็วสูงได้</item>
+    <item>ไลบรารีมาตรฐานของ Kotlin โดย JetBrains ภายใต้ Apache License 2.0</item>
+  </string-array>
+
+  <string name="about_license_heading">สัญญาอนุญาต</string>
+  <string-array name="about_license">
+    <item>EspeakZ ลิขสิทธิ์ 2026 ZAPPS SOFTWARE LTD. สร้างบน eSpeak NG ลิขสิทธิ์ 2005 ถึง 2026 Jonathan Duddington, Reece H. Dunn และผู้ร่วมพัฒนา eSpeak NG</item>
+    <item>EspeakZ เป็นซอฟต์แวร์เสรีและโอเพนซอร์ส: คุณแจกจ่ายต่อและแก้ไขได้ภายใต้เงื่อนไขของ GNU General Public License เวอร์ชัน 3 หรือเวอร์ชันใดที่ใหม่กว่า ซึ่งเป็นสัญญาอนุญาตเดียวกับ eSpeak NG สัญญาอนุญาตอยู่ที่ www.gnu.org/licenses/gpl-3.0.html</item>
+    <item>ซอร์สของแอป Android และไลบรารี Sonic อยู่ภายใต้ Apache License 2.0 บางส่วนยังคงใช้สัญญาอนุญาตของตนเอง: ไฟล์จาก eSpeak NG อยู่ภายใต้สัญญาอนุญาต BSD แบบ 2 ข้อ ข้อมูล Unicode อยู่ภายใต้สัญญาอนุญาต Unicode และเครื่องเล่นเสียงพูด Klatt ของ NV Access Limited อยู่ภายใต้ GNU General Public License รุ่น 3 หรือใหม่กว่า</item>
+    <item>EspeakZ ไม่มีการรับประกันใดๆ ตามขอบเขตที่กฎหมายอนุญาต</item>
+    <item>ซอร์สโค้ดฉบับสมบูรณ์ของ EspeakZ พร้อมการเปลี่ยนแปลงทั้งหมดอยู่ที่ github.com/zapps-ltd/EspeakZ ภายใต้สัญญาอนุญาตเดียวกัน การตั้งค่า EspeakZ บน GitHub จะเปิดหน้านั้น</item>
+    <item>Android เป็นเครื่องหมายการค้าของ Google LLC</item>
+  </string-array>
+</resources>

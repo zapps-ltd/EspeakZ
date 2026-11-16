@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,6 +27,7 @@ import org.hamcrest.Matchers.greaterThan
 import org.hamcrest.Matchers.hasItem
 import org.hamcrest.Matchers.`is`
 import org.hamcrest.Matchers.isIn
+import org.hamcrest.Matchers.lessThanOrEqualTo
 import org.hamcrest.Matchers.not
 import org.hamcrest.Matchers.notNullValue
 import org.junit.After
@@ -75,18 +76,35 @@ class EspeakDataTest {
     }
 
     @Test
-    fun defaultsAreTheDeviceLanguagesAndEnglish() {
+    fun defaultsAreTheDeviceLanguageAndTheEngineData() {
         val defaults = EspeakData.defaultDictionaries(storage)
         assertThat(defaults, hasItem(EspeakData.ENGLISH))
+        assertThat(defaults.size, lessThanOrEqualTo(2))
         assertThat(defaults, everyItem(isIn(EspeakData.availableDictionaries(storage) + EspeakData.ENGLISH)))
         // The device's own language is among them whenever eSpeak speaks it.
-        val device = Locale.getDefault()
-        val speaksDeviceLanguage = EspeakData.availableLanguages(storage).isNotEmpty() &&
-            SpeechSynthesis(storage, null).getAvailableVoices().any { it.locale.isO3Language == device.isO3Language }
-        if (speaksDeviceLanguage) {
-            val voice = SpeechSynthesis(storage, null).getAvailableVoices().first { it.locale.isO3Language == device.isO3Language }
-            assertThat(EspeakData.dictionaryForVoice(storage, voice.identifier), isIn(defaults))
-        }
+        val voice = EspeakData.defaultVoice(storage)
+        assertThat(voice, notNullValue())
+        assertThat(EspeakData.dictionaryForVoice(storage, voice!!.identifier), isIn(defaults))
+    }
+
+    @Test
+    fun oneVoiceIsChosenForEachLanguage() {
+        fun voice(device: Locale) = EspeakData.defaultVoice(storage, device)?.identifier
+        assertThat(voice(Locale("en")), `is`("gmw/en-US"))
+        assertThat(voice(Locale.US), `is`("gmw/en-US"))
+        assertThat(voice(Locale.UK), `is`("gmw/en"))
+        assertThat(voice(Locale("pt")), `is`("roa/pt-BR"))
+        assertThat(voice(Locale("pt", "PT")), `is`("roa/pt"))
+        assertThat(voice(Locale("es", "AR")), `is`("roa/es-419"))
+        assertThat(voice(Locale("es", "ES")), `is`("roa/es"))
+        assertThat(voice(Locale("fr")), `is`("roa/fr"))
+        assertThat(voice(Locale("ar", "DZ")), `is`("sem/ar"))
+        // A language eSpeak does not speak gets American English.
+        assertThat(voice(Locale("xx")), `is`("gmw/en-US"))
+        // A language added later gets its usual voice, unless the device speaks it.
+        assertThat(EspeakData.defaultVoiceFor(storage, "en", Locale("ar"))?.identifier, `is`("gmw/en-US"))
+        assertThat(EspeakData.defaultVoiceFor(storage, "en", Locale.UK)?.identifier, `is`("gmw/en"))
+        assertThat(EspeakData.defaultVoiceFor(storage, "lv", Locale.US)?.identifier, `is`("bat/lv"))
     }
 
     @Test

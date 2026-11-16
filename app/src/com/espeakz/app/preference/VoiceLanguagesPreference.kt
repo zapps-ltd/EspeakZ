@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,17 +28,18 @@ import com.espeakz.app.EspeakData
 import com.espeakz.app.R
 
 /**
- * Chooses which languages' voice data is installed on the device. English is
- * always installed, so it is not in the list. The choice is applied by
- * [onLanguagesChosen], which installs and removes the dictionaries; nothing is
- * stored in the settings.
+ * Chooses which languages' voice data is installed on the device, English
+ * among them: its data always stays, since the engine needs it, but its voices
+ * are on only while it is chosen. The choice is applied by [onLanguagesChosen],
+ * which installs and removes the dictionaries and turns their voices on and
+ * off.
  */
 class VoiceLanguagesPreference(context: Context) : DialogPreference(context, null) {
 
-    /** The languages the user can choose, without English. */
+    /** The languages the user can choose. */
     var languages: List<EspeakData.Language> = emptyList()
 
-    /** The dictionaries installed now. */
+    /** The dictionaries in use now. */
     var installed: Set<String> = emptySet()
 
     /** Receives the dictionaries the user chose, when they press OK. */
@@ -85,6 +86,6 @@ class VoiceLanguagesPreference(context: Context) : DialogPreference(context, nul
         listView = null
         if (!positiveResult) return
         val chosen = languages.indices.filter { list.isItemChecked(it) }.map { languages[it].dictionary }.toSet()
-        onLanguagesChosen?.invoke(chosen + EspeakData.ENGLISH)
+        onLanguagesChosen?.invoke(chosen)
     }
 }

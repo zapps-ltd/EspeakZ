@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Over EspeakZ</string>
+  <string name="about_author">Door zapps-ltd</string>
+  <string name="about_summary">Door zapps-ltd, versie %s</string>
+  <string name="about_version">Versie %s</string>
+  <string name="about_team_heading">Ontwikkelaarsteam</string>
+  <string name="about_team">Ontwikkelaars van zapps.ltd: %1$s en %2$s</string>
+  <string name="about_contact_heading">Contact</string>
+  <string name="about_email">E-mail %1$s</string>
+  <string name="about_home">Bezoek zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ is een tekst-naar-spraakengine voor Android. Het is een fork van de Android-app eSpeak NG en spreekt met de spraakengine eSpeak NG, die meer dan 100 talen en accenten ondersteunt. EspeakZ is niet de officiële eSpeak NG-app en wordt niet ondersteund door het eSpeak NG-project. Het wordt naast de officiële app geïnstalleerd.</string>
+
+  <string name="about_privacy_heading">Privacy</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ verzamelt geen gegevens en maakt om geen enkele reden verbinding met internet. Het vraagt niet om de internetmachtiging.</item>
+    <item>Wat EspeakZ voorleest, de instellingen en de stemgegevens blijven op uw apparaat.</item>
+    <item>Bij Twee talen geeft EspeakZ de tekst in de tweede taal door aan de engine waarvan u de stem hebt gekozen. Op die engine zijn haar eigen privacyvoorwaarden van toepassing, en een stem met de aanduiding „heeft internet nodig” stuurt die tekst naar de aanbieder.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Over de fork</string>
+  <string-array name="about_goals">
+    <item>Doel: spraak vanaf het allereerste verzoek na de installatie, zonder de engine uit en weer aan te zetten en zonder extra installatiestap. Gedaan.</item>
+    <item>Doel: Klatt-variant 6 als standaard stemvariant. Gedaan.</item>
+    <item>Doel: de Android-code van de app herschreven in Kotlin. Gedaan.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Wijzigingen ten opzichte van eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ is begonnen met eSpeak NG 1.53.0 van 22 september 2026. De onderstaande wijzigingen zijn aangebracht in oktober 2026.</item>
+    <item>Spraak vanaf het eerste verzoek: de stemgegevens worden geïnstalleerd zodra de app start, en de engine wacht erop in plaats van stil te blijven, zodat de eerste woorden van een schermlezer worden uitgesproken.</item>
+    <item>Stemtalen: bij de eerste start worden de talen van uw apparaat en Engels geïnstalleerd. Voeg talen toe of verwijder ze in Instellingen, Stemtalen.</item>
+    <item>Klatt-variant 6 is de standaard stemvariant.</item>
+    <item>De app is geschreven in Kotlin, en de engine start nooit opnieuw op terwijl hij spreekt.</item>
+    <item>Snellere start: na de eerste start is de engine binnen enkele honderdsten van een seconde klaar, zelfs op een horloge.</item>
+    <item>Een vollere stem: een basversterking verhoogt de lage frequenties van elke stem met 8 dB, zonder vervorming.</item>
+    <item>Opgelost: de stemvarianten Announcer en Marcelo lieten de engine stil, twee varianten stonden dubbel in de lijst, en Import eSpeak dictionary gebruikt nu de bestandskiezer van Android en slaat op waar de engine leest.</item>
+    <item>De app heet EspeakZ, met applicatie-id com.espeakz.app, zodat hij naast de officiële eSpeak NG-app kan worden geïnstalleerd. Hij heeft een startpictogram dat de instellingen opent.</item>
+    <item>Twee talen: twee talen worden tegelijk voorgelezen, een in Latijnse letters en een in een ander alfabet, zoals Engels en Arabisch, elk met een eigen stem van EspeakZ of een andere geïnstalleerde engine. Elke taal behoudt een eigen stem, spreeksnelheid, toonhoogte en volume, zodat er veel kunnen worden ingesteld en er twee kunnen worden gebruikt. U kiest welke stem cijfers, leestekens en emoji voorleest, en de twee stemmen volgen elkaar zonder pauzes op.</item>
+    <item>Snellere antwoorden: met TalkBack komt het eerste geluid van elk verzoek binnen enkele honderdsten van een seconde, zelfs op een horloge, en een stop werkt direct.</item>
+    <item>EspeakZ-taal: EspeakZ spreekt in de taal van uw apparaat, waarbij gewoon Engels Amerikaans Engels is, en kan één taal in alle apps gebruiken.</item>
+    <item>Getallen van meer dan 6 cijfers kunnen een, twee of drie cijfers tegelijk worden voorgelezen.</item>
+    <item>Keep EspeakZ running vraagt Android om EspeakZ uit te sluiten van batterijbesparing. EspeakZ spreekt ook op het vergrendelscherm.</item>
+    <item>De instellingen bevatten dit scherm Over EspeakZ met de auteur, de wijzigingen, de dankbetuigingen en de licentie.</item>
+    <item>De projectindeling en de build zijn gewijzigd zodat de app ook op Windows kan worden gebouwd.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Dankbetuigingen</string>
+  <string-array name="about_credits">
+    <item>EspeakZ bestaat dankzij het werk van het eSpeak NG-project en iedereen die eraan heeft bijgedragen.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: de spraakengine, de stemgegevens voor elke taal en de oorspronkelijke Android-app, onderhouden door Reece H. Dunn en de bijdragers van eSpeak NG.</item>
+    <item>eSpeak, gemaakt door Jonathan Duddington, waarop eSpeak NG is gebaseerd.</item>
+    <item>De Android-app eSpeak NG, door Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov en de bijdragers van eSpeak NG, met code van Google Inc. en het Android Open Source Project.</item>
+    <item>De taalbeheerders en vertalers van eSpeak NG en de Android-app.</item>
+    <item>De Sonic-bibliotheek van Bill Cox, die hoge spreeksnelheden mogelijk maakt.</item>
+    <item>De Kotlin-standaardbibliotheek van JetBrains, onder de Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Licentie</string>
+  <string-array name="about_license">
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Gebaseerd op eSpeak NG, copyright 2005 tot 2026 Jonathan Duddington, Reece H. Dunn en de bijdragers van eSpeak NG.</item>
+    <item>EspeakZ is vrije opensourcesoftware: u kunt het herdistribueren en wijzigen onder de voorwaarden van de GNU General Public License, versie 3 of een latere versie, dezelfde licentie als eSpeak NG. De licentie staat op www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>De broncode van de Android-app en de Sonic-bibliotheek vallen onder de Apache License 2.0. Sommige onderdelen houden hun eigen licentie: bestanden uit eSpeak NG vallen onder de BSD-licentie met 2 clausules, Unicode-gegevens onder de Unicode-licentie en de Klatt-spraakspeler van NV Access Limited onder de GNU General Public License versie 3 of later.</item>
+    <item>EspeakZ wordt geleverd zonder garantie, voor zover de wet dat toestaat.</item>
+    <item>De volledige broncode van EspeakZ, met alle wijzigingen, staat op github.com/zapps-ltd/EspeakZ, onder dezelfde licentie. Instellingen, EspeakZ op GitHub opent die.</item>
+    <item>Android is een handelsmerk van Google LLC.</item>
+  </string-array>
+</resources>

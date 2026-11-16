@@ -1,5 +1,6 @@
 EspeakZ
-Copyright (C) 2026 Harith Alhamdani
+Copyright (C) 2026 ZAPPS SOFTWARE LTD
+Source code: https://github.com/zapps-ltd/EspeakZ
 
 EspeakZ is a modified version of eSpeak NG and its Android app.
 
@@ -36,11 +37,16 @@ Parts and their licenses
    see COPYING.APACHE and the header of each file. New app files
    written for EspeakZ use the same license.
 3. The Sonic library by Bill Cox, downloaded during the build and
-   built into the app: Apache License 2.0.
+   built into the app: Apache License 2.0, see COPYING.APACHE.
 4. getopt.c, used only when building the engine for Windows:
    2-clause BSD license, see COPYING.BSD2.
 5. The Unicode Character Database files used by the engine: the
    Unicode license, see COPYING.UCD.
+6. The Klatt formant synthesizer in espeak-ng/src/speechPlayer,
+   copyright 2014 NV Access Limited: GNU General Public License
+   version 3 or later, see COPYING.
+7. The Kotlin standard library by JetBrains, built into the app:
+   Apache License 2.0, see COPYING.APACHE.
 
 The app as built, which combines all of these, is distributed under
 the GNU General Public License version 3 or later. Every copyright

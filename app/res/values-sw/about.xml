@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Kuhusu EspeakZ</string>
+  <string name="about_author">Na zapps-ltd</string>
+  <string name="about_summary">Na zapps-ltd, toleo %s</string>
+  <string name="about_version">Toleo %s</string>
+  <string name="about_team_heading">Timu ya wasanidi</string>
+  <string name="about_team">Wasanidi wa zapps.ltd: %1$s na %2$s</string>
+  <string name="about_contact_heading">Wasiliana nasi</string>
+  <string name="about_email">Barua pepe %1$s</string>
+  <string name="about_home">Tembelea zapps.ltd</string>
+  <string name="about_copyright">Haki miliki © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ ni injini ya kubadilisha maandishi kuwa usemi kwa ajili ya Android. Ni fork ya programu ya Android ya eSpeak NG na huzungumza kwa injini ya usemi ya eSpeak NG, inayounga mkono lugha na lafudhi zaidi ya 100. EspeakZ si programu rasmi ya eSpeak NG na haijaidhinishwa na mradi wa eSpeak NG. Husakinishwa pamoja na programu rasmi.</string>
+
+  <string name="about_privacy_heading">Faragha</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ haikusanyi data yoyote na haiunganishi kwenye intaneti kwa sababu yoyote. Haiombi ruhusa ya intaneti.</item>
+    <item>Kile ambacho EspeakZ husoma, mipangilio yake na data ya sauti yake hubaki kwenye kifaa chako.</item>
+    <item>Kwa Lugha mbili, EspeakZ hukabidhi maandishi ya lugha ya pili kwa injini ya sauti uliyochagua. Masharti ya faragha ya injini hiyo yenyewe yanatumika kwayo, na sauti iliyowekewa alama «inahitaji intaneti» hutuma maandishi hayo kwa mtoaji wake.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Kuhusu fork</string>
+  <string-array name="about_goals">
+    <item>Lengo: usemi tangu ombi la kwanza kabisa baada ya kusakinisha, bila kuzima na kuwasha injini na bila hatua ya ziada ya usakinishaji. Limekamilika.</item>
+    <item>Lengo: Klatt variant 6 kama lahaja chaguomsingi ya sauti. Limekamilika.</item>
+    <item>Lengo: msimbo wa Android wa programu uandikwe upya kwa Kotlin. Limekamilika.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Mabadiliko kutoka eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ ilianzia eSpeak NG 1.53.0 ya tarehe 22 Septemba 2026. Mabadiliko yaliyo hapa chini yalifanywa Oktoba 2026.</item>
+    <item>Usemi tangu ombi la kwanza: data ya sauti husakinishwa mara programu inapoanza, na injini huisubiri badala ya kukaa kimya, ili maneno ya kwanza ya kisomaji skrini yasemwe.</item>
+    <item>Lugha za sauti: kuanza mara ya kwanza husakinisha lugha za kifaa chako na Kiingereza. Ongeza au ondoa lugha katika Mipangilio, Lugha za sauti.</item>
+    <item>Klatt variant 6 ndiyo lahaja chaguomsingi ya sauti.</item>
+    <item>Programu imeandikwa kwa Kotlin, na injini haiwashwi upya kamwe inapozungumza.</item>
+    <item>Kuanza kwa kasi zaidi: baada ya kuanza mara ya kwanza, injini iko tayari ndani ya sehemu chache za mia za sekunde, hata kwenye saa.</item>
+    <item>Sauti iliyojaa zaidi: kuongeza besi huinua masafa ya chini ya kila sauti kwa 8 dB, bila upotoshaji.</item>
+    <item>Imerekebishwa: lahaja za sauti Announcer na Marcelo ziliacha injini kimya, lahaja mbili ziliorodheshwa mara mbili, na Leta kamusi ya eSpeak sasa hutumia kichagua faili cha Android na huhifadhi mahali injini inaposoma.</item>
+    <item>Programu inaitwa EspeakZ, yenye kitambulisho cha programu com.espeakz.app, ili isakinishwe pamoja na programu rasmi ya eSpeak NG. Ina aikoni ya kizindua inayofungua mipangilio yake.</item>
+    <item>Lugha mbili: lugha mbili husomwa kwa wakati mmoja, moja ikiandikwa kwa herufi za Kilatini na nyingine kwa alfabeti tofauti, kama Kiingereza na Kiarabu, kila moja kwa sauti yake kutoka EspeakZ au injini yoyote iliyosakinishwa. Kila lugha huhifadhi sauti yake, kasi ya usemi, kiwango cha sauti na sauti kubwa, hivyo nyingi zinaweza kuwekwa na zozote mbili zikatumika. Unachagua sauti ipi isome nambari, alama za uandishi na emoji, na sauti hizo mbili hufuatana bila mapengo.</item>
+    <item>Majibu ya haraka zaidi: kwa TalkBack, sauti ya kwanza ya kila ombi hufika ndani ya sehemu chache za mia za sekunde, hata kwenye saa, na kusimamisha kunafanya kazi mara moja.</item>
+    <item>Lugha ya EspeakZ: EspeakZ huzungumza kwa lugha ya kifaa chako, na Kiingereza cha kawaida ni Kiingereza cha Marekani, na inaweza kutumia lugha moja katika programu zote.</item>
+    <item>Nambari zenye tarakimu zaidi ya 6 zinaweza kusomwa tarakimu moja, mbili au tatu kwa wakati mmoja.</item>
+    <item>Endelea kuendesha EspeakZ huiomba Android iache EspeakZ nje ya kiokoa betri. EspeakZ huzungumza pia kwenye skrini iliyofungwa.</item>
+    <item>Mipangilio ina skrini hii ya Kuhusu EspeakZ yenye mwandishi, mabadiliko, shukrani na leseni.</item>
+    <item>Mpangilio wa mradi na ujenzi vilibadilishwa ili programu ijengwe pia kwenye Windows.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Shukrani</string>
+  <string-array name="about_credits">
+    <item>EspeakZ ipo kwa sababu ya kazi ya mradi wa eSpeak NG na kila aliyechangia.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: injini ya usemi, data ya sauti kwa kila lugha na programu asili ya Android, inayotunzwa na Reece H. Dunn na wachangiaji wa eSpeak NG.</item>
+    <item>eSpeak, iliyoundwa na Jonathan Duddington, ambayo eSpeak NG inategemea.</item>
+    <item>Programu ya Android ya eSpeak NG, na Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov na wachangiaji wa eSpeak NG, yenye msimbo kutoka Google Inc. na Android Open Source Project.</item>
+    <item>Watunzaji wa lugha na watafsiri wa eSpeak NG na programu yake ya Android.</item>
+    <item>Maktaba ya Sonic ya Bill Cox, inayowezesha kasi za juu za usemi.</item>
+    <item>Maktaba ya kawaida ya Kotlin ya JetBrains, chini ya Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Leseni</string>
+  <string-array name="about_license">
+    <item>EspeakZ, haki miliki 2026 ZAPPS SOFTWARE LTD. Inatokana na eSpeak NG, haki miliki 2005 hadi 2026 Jonathan Duddington, Reece H. Dunn na wachangiaji wa eSpeak NG.</item>
+    <item>EspeakZ ni programu huru na ya chanzo huria: unaweza kuisambaza tena na kuibadilisha chini ya masharti ya GNU General Public License, toleo la 3 au toleo lolote la baadaye, leseni ile ile ya eSpeak NG. Leseni iko www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Vyanzo vya programu ya Android na maktaba ya Sonic viko chini ya Apache License 2.0. Baadhi ya sehemu zinabaki na leseni zao: faili kutoka eSpeak NG ziko chini ya leseni ya BSD ya vifungu 2, data ya Unicode chini ya leseni ya Unicode, na kicheza sauti cha Klatt cha NV Access Limited chini ya GNU General Public License toleo la 3 au la baadaye.</item>
+    <item>EspeakZ haina dhamana yoyote, kwa kiwango kinachoruhusiwa na sheria.</item>
+    <item>Msimbo kamili wa chanzo wa EspeakZ, pamoja na mabadiliko yote, uko github.com/zapps-ltd/EspeakZ, chini ya leseni ile ile. Mipangilio, EspeakZ kwenye GitHub huufungua.</item>
+    <item>Android ni alama ya biashara ya Google LLC.</item>
+  </string-array>
+</resources>

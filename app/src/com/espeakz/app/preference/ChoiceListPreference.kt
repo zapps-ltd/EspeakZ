@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,11 +49,6 @@ class ChoiceListPreference(context: Context) : ListPreference(context) {
         super.showDialog(state)
         val list = (dialog as? AlertDialog)?.listView ?: return
         list.leaveOnTab()
-        val index = findIndexOfValue(value)
-        if (index < 0) return
-        list.post {
-            list.setSelection(index)
-            list.requestFocus()
-        }
+        list.openOn(findIndexOfValue(value))
     }
 }

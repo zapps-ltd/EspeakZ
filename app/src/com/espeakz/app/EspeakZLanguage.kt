@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,8 +35,15 @@ object EspeakZLanguage {
 
     const val DEVICE = ""
 
-    /** The country a language's voice comes from when the request names none, or one EspeakZ lacks. */
-    private val PREFERRED_COUNTRY = mapOf("eng" to "USA", "fra" to "FRA", "por" to "PRT")
+    /**
+     * The country a language's voice comes from when the request names none,
+     * or one EspeakZ lacks: the variant most people speak. eSpeak's Latin
+     * American Spanish, es-419, has the locale es-MX.
+     */
+    private val PREFERRED_COUNTRY = mapOf("eng" to "USA", "fra" to "FRA", "por" to "BRA", "spa" to "MEX")
+
+    /** The country of a language's voice that names none: eSpeak's pt is Portugal's, its es Spain's. */
+    private val HOME_COUNTRY = mapOf("por" to "PRT", "spa" to "ESP")
 
     fun isForced(prefs: SharedPreferences): Boolean = prefs.getBoolean(PREF_FORCE, false)
 
@@ -67,6 +74,9 @@ object EspeakZLanguage {
             same.firstOrNull { iso3Country(it.locale) == country && it.locale.variant.equals(locale.variant, ignoreCase = true) }
                 ?.let { return it }
             same.firstOrNull { iso3Country(it.locale) == country && it.locale.variant.isEmpty() }?.let { return it }
+            if (HOME_COUNTRY[language] == country) {
+                same.firstOrNull { it.locale.country.isEmpty() }?.let { return it }
+            }
         }
         PREFERRED_COUNTRY[language]?.let { preferred ->
             same.firstOrNull { iso3Country(it.locale) == preferred && it.locale.variant.isEmpty() }?.let { return it }

@@ -4,10 +4,16 @@
 -->
 <resources>
   <string name="about_title">About EspeakZ</string>
-  <string name="about_author">By Harith Alhamdani</string>
-  <string name="about_summary">By Harith Alhamdani, version %s</string>
+  <string name="about_author">By zapps-ltd</string>
+  <string name="about_summary">By zapps-ltd, version %s</string>
   <string name="about_version">Version %s</string>
-  <string name="about_intro">EspeakZ is a text-to-speech engine for Android, made for screen reader users first, TalkBack users above all. It is a fork of the eSpeak NG Android app and speaks with the eSpeak NG speech engine, which supports more than 100 languages and accents. EspeakZ is not the official eSpeak NG app and is not endorsed by the eSpeak NG project. It installs alongside the official app.</string>
+  <string name="about_team_heading">Developers team</string>
+  <string name="about_team">zapps.ltd developers: %1$s and %2$s</string>
+  <string name="about_contact_heading">Contact</string>
+  <string name="about_email">Email %1$s</string>
+  <string name="about_home">Visit zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ is a text-to-speech engine for Android. It is a fork of the eSpeak NG Android app and speaks with the eSpeak NG speech engine, which supports more than 100 languages and accents. EspeakZ is not the official eSpeak NG app and is not endorsed by the eSpeak NG project. It installs alongside the official app.</string>
 
   <string name="about_privacy_heading">Privacy</string>
   <string-array name="about_privacy">
@@ -21,7 +27,6 @@
     <item>Goal: speech from the very first request after installing, without turning the engine off and on and without an extra install step. Done.</item>
     <item>Goal: Klatt variant 6 as the default voice variant. Done.</item>
     <item>Goal: the app\'s Android code rewritten in Kotlin. Done.</item>
-    <item>Goal: everything in the app fully usable with TalkBack, a keyboard and a TV remote\'s D-pad. In progress.</item>
   </string-array>
 
   <string name="about_changes_heading">Changes from eSpeak NG</string>
@@ -52,15 +57,16 @@
     <item>The eSpeak NG Android app, by Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov and the eSpeak NG contributors, with code from Google Inc. and the Android Open Source Project.</item>
     <item>The language maintainers and translators of eSpeak NG and its Android app.</item>
     <item>The Sonic library by Bill Cox, which makes high speech rates possible.</item>
+    <item>The Kotlin standard library by JetBrains, under the Apache License 2.0.</item>
   </string-array>
 
   <string name="about_license_heading">License</string>
   <string-array name="about_license">
-    <item>EspeakZ, copyright 2026 Harith Alhamdani. Based on eSpeak NG, copyright 2005 to 2026 Jonathan Duddington, Reece H. Dunn and the eSpeak NG contributors.</item>
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Based on eSpeak NG, copyright 2005 to 2026 Jonathan Duddington, Reece H. Dunn and the eSpeak NG contributors.</item>
     <item>EspeakZ is free and open source software: you can redistribute it and change it under the terms of the GNU General Public License, version 3 or any later version, the same license as eSpeak NG. The license is at www.gnu.org/licenses/gpl-3.0.html.</item>
-    <item>The app sources are under the Apache License 2.0, and so is the Sonic library.</item>
+    <item>The Android app sources and the Sonic library are under the Apache License 2.0. Some parts keep their own licenses: files from eSpeak NG under the 2-clause BSD license, Unicode data under the Unicode license, and the Klatt speech player by NV Access Limited under the GNU General Public License version 3 or later.</item>
     <item>EspeakZ comes with no warranty, to the extent permitted by law.</item>
-    <item>The complete source code of EspeakZ, with all changes, is at github.com/iqdz/EspeakZ, under the same license. Settings, EspeakZ on GitHub opens it.</item>
+    <item>The complete source code of EspeakZ, with all changes, is at github.com/zapps-ltd/EspeakZ, under the same license. Settings, EspeakZ on GitHub opens it.</item>
     <item>Android is a trademark of Google LLC.</item>
   </string-array>
 </resources>

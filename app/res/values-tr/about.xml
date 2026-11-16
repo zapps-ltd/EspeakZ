@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">EspeakZ hakkında</string>
+  <string name="about_author">Geliştiren: zapps-ltd</string>
+  <string name="about_summary">Geliştiren: zapps-ltd, sürüm %s</string>
+  <string name="about_version">Sürüm %s</string>
+  <string name="about_team_heading">Geliştirici ekibi</string>
+  <string name="about_team">zapps.ltd geliştiricileri: %1$s ve %2$s</string>
+  <string name="about_contact_heading">İletişim</string>
+  <string name="about_email">E-posta %1$s</string>
+  <string name="about_home">zapps.ltd adresini ziyaret edin</string>
+  <string name="about_copyright">Telif hakkı © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ, Android için bir metin okuma motorudur. eSpeak NG Android uygulamasının bir çatalıdır ve 100\'den fazla dil ve aksanı destekleyen eSpeak NG konuşma motoruyla konuşur. EspeakZ resmi eSpeak NG uygulaması değildir ve eSpeak NG projesi tarafından onaylanmamıştır. Resmi uygulamayla yan yana kurulur.</string>
+
+  <string name="about_privacy_heading">Gizlilik</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ hiçbir veri toplamaz ve hiçbir nedenle internete bağlanmaz. İnternet iznini istemez.</item>
+    <item>EspeakZ\'nin okuduğu metin, ayarları ve ses verileri cihazınızda kalır.</item>
+    <item>Çift dil özelliğinde EspeakZ, ikinci dildeki metni seçtiğiniz sesin motoruna verir. O motorun kendi gizlilik koşulları geçerlidir ve «internet gerekir» olarak işaretlenmiş bir ses bu metni sağlayıcısına gönderir.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Çatal hakkında</string>
+  <string-array name="about_goals">
+    <item>Hedef: kurulumdan sonraki ilk istekten itibaren konuşma; motoru kapatıp açmadan ve ek bir kurulum adımı olmadan. Tamamlandı.</item>
+    <item>Hedef: varsayılan ses çeşidi olarak Klatt çeşidi 6. Tamamlandı.</item>
+    <item>Hedef: uygulamanın Android kodunun Kotlin ile yeniden yazılması. Tamamlandı.</item>
+  </string-array>
+
+  <string name="about_changes_heading">eSpeak NG\'den farklar</string>
+  <string-array name="about_changes">
+    <item>EspeakZ, 22 Eylül 2026 tarihli eSpeak NG 1.53.0 sürümünden yola çıktı. Aşağıdaki değişiklikler Ekim 2026\'da yapıldı.</item>
+    <item>İlk istekten itibaren konuşma: ses verileri uygulama başlar başlamaz kurulur ve motor sessiz kalmak yerine bunu bekler; böylece ekran okuyucunun ilk sözleri duyulur.</item>
+    <item>Ses dilleri: ilk başlatmada cihazınızın dilleri ve İngilizce kurulur. Dilleri Ayarlar, Ses dilleri bölümünden ekleyebilir veya kaldırabilirsiniz.</item>
+    <item>Klatt çeşidi 6 varsayılan ses çeşididir.</item>
+    <item>Uygulama Kotlin ile yazılmıştır ve motor konuşurken asla yeniden başlamaz.</item>
+    <item>Daha hızlı başlangıç: ilk başlatmadan sonra motor, saatte bile saniyenin birkaç yüzde birinde hazır olur.</item>
+    <item>Daha dolgun bir ses: bas güçlendirme, her sesin alçak frekanslarını bozulma olmadan 8 dB yükseltir.</item>
+    <item>Düzeltildi: Announcer ve Marcelo ses çeşitleri motoru sessiz bırakıyordu, iki çeşit iki kez listeleniyordu ve eSpeak sözlüğünü içe aktarma artık Android\'in dosya seçicisini kullanıyor ve motorun okuduğu yere kaydediyor.</item>
+    <item>Uygulamanın adı EspeakZ, uygulama kimliği com.espeakz.app olup resmi eSpeak NG uygulamasıyla yan yana kurulur. Ayarlarını açan bir başlatıcı simgesi vardır.</item>
+    <item>Çift dil: Latin harfleriyle yazılan bir dil ve başka bir alfabeyle yazılan bir dil, örneğin İngilizce ve Arapça, aynı anda okunur; her biri EspeakZ\'nin veya kurulu herhangi bir motorun kendi sesiyle okunur. Her dil kendi sesini, konuşma hızını, perdesini ve ses düzeyini korur; böylece çok sayıda dil ayarlanabilir ve herhangi ikisi kullanılabilir. Sayıları, noktalama işaretlerini ve emojileri hangi sesin okuyacağını siz seçersiniz ve iki ses boşluksuz olarak birbirini izler.</item>
+    <item>Daha hızlı yanıtlar: TalkBack ile her isteğin ilk sesi saatte bile saniyenin birkaç yüzde biri içinde gelir ve durdurma hemen etkili olur.</item>
+    <item>EspeakZ dili: EspeakZ cihazınızın dilinde konuşur, sade İngilizce Amerikan İngilizcesidir ve tüm uygulamalarda tek bir dil kullanabilir.</item>
+    <item>6 basamaktan uzun sayılar birer, ikişer veya üçer basamak olarak okunabilir.</item>
+    <item>EspeakZ\'yi çalışır durumda tut, Android\'den EspeakZ\'yi pil tasarrufunun dışında tutmasını ister. EspeakZ kilit ekranında da konuşur.</item>
+    <item>Ayarlarda yazar, değişiklikler, katkıda bulunanlar ve lisansı gösteren bu EspeakZ hakkında ekranı bulunur.</item>
+    <item>Proje yapısı ve derleme değiştirildi; böylece uygulama Windows\'ta da derlenebiliyor.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Katkıda bulunanlar</string>
+  <string-array name="about_credits">
+    <item>EspeakZ, eSpeak NG projesinin ve ona katkıda bulunan herkesin emeği sayesinde var.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: konuşma motoru, her dilin ses verileri ve özgün Android uygulaması; Reece H. Dunn ve eSpeak NG katkıda bulunanları tarafından sürdürülüyor.</item>
+    <item>eSpeak NG\'nin temel aldığı, Jonathan Duddington tarafından yaratılan eSpeak.</item>
+    <item>Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov ve eSpeak NG katkıda bulunanları tarafından geliştirilen eSpeak NG Android uygulaması; kodun bir kısmı Google Inc. ve Android Open Source Project\'ten gelir.</item>
+    <item>eSpeak NG\'nin ve Android uygulamasının dil bakımcıları ve çevirmenleri.</item>
+    <item>Yüksek konuşma hızlarını mümkün kılan, Bill Cox\'un Sonic kitaplığı.</item>
+    <item>JetBrains\'in Kotlin standart kitaplığı, Apache License 2.0 altında.</item>
+  </string-array>
+
+  <string name="about_license_heading">Lisans</string>
+  <string-array name="about_license">
+    <item>EspeakZ, telif hakkı 2026 ZAPPS SOFTWARE LTD. Telif hakkı 2005 ile 2026 arası Jonathan Duddington, Reece H. Dunn ve eSpeak NG katkıda bulunanlarına ait olan eSpeak NG\'yi temel alır.</item>
+    <item>EspeakZ özgür ve açık kaynaklı bir yazılımdır: eSpeak NG ile aynı lisans olan GNU General Public License, sürüm 3 veya sonraki herhangi bir sürümün koşulları altında dağıtabilir ve değiştirebilirsiniz. Lisans www.gnu.org/licenses/gpl-3.0.html adresindedir.</item>
+    <item>Android uygulamasının kaynakları ve Sonic kitaplığı Apache License 2.0 altındadır. Bazı bölümler kendi lisanslarını korur: eSpeak NG dosyaları 2 maddeli BSD lisansı, Unicode verileri Unicode lisansı, NV Access Limited\'in Klatt konuşma oynatıcısı ise GNU General Public License sürüm 3 veya sonrası altındadır.</item>
+    <item>EspeakZ, yasaların izin verdiği ölçüde hiçbir garanti vermez.</item>
+    <item>EspeakZ\'nin tüm değişiklikleriyle birlikte eksiksiz kaynak kodu, aynı lisansla github.com/zapps-ltd/EspeakZ adresindedir. Ayarlar, GitHub\'da EspeakZ bunu açar.</item>
+    <item>Android, Google LLC\'nin ticari markasıdır.</item>
+  </string-array>
+</resources>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -102,6 +102,7 @@ object EspeakData {
     @Volatile private var assetVersion: String? = null
     @Volatile private var assetFiles: List<String>? = null
     @Volatile private var languageFiles: Map<String, LanguageFile>? = null
+    @Volatile private var languageNames: Pair<Locale, Map<String, String>>? = null
 
     /**
      * The device-protected storage context, whatever context is passed in, so
@@ -151,9 +152,18 @@ object EspeakData {
         synchronized(lock) {
             if (isInstalled(storage)) return true
             // An update keeps the languages the user had. A first install, or
-            // a data folder an older build left empty, gets the defaults.
-            val dictionaries = installedDictionaries(storage).ifEmpty { timed("choose default languages") { defaultDictionaries(storage) } }
-            return timed("install voice data") { install(storage, dictionaries) }
+            // a data folder an older build left empty, gets the device's one
+            // language, with one voice of it turned on.
+            val installed = installedDictionaries(storage)
+            val dictionaries = installed.ifEmpty { timed("choose default languages") { defaultDictionaries(storage) } }
+            val ok = timed("install voice data") { install(storage, dictionaries) }
+            if (ok && installed.isEmpty()) {
+                defaultVoice(storage)?.let {
+                    @Suppress("DEPRECATION")
+                    LanguageSettings.selectOnly(PreferenceManager.getDefaultSharedPreferences(storage), it)
+                }
+            }
+            return ok
         }
     }
 
@@ -198,31 +208,61 @@ object EspeakData {
         languageFiles(context)[identifier]?.dictionary
 
     /**
-     * The dictionaries for the device's languages, plus English. A language
-     * eSpeak does not speak adds nothing.
+     * What a first install copies: the dictionary of the one voice
+     * [defaultVoice] picks for the device, and English, which the engine
+     * itself cannot run without. English is turned on as a language only
+     * when it is the device's; see [LanguageSettings.selectOnly].
      */
     @JvmStatic
     fun defaultDictionaries(context: Context): Set<String> {
-        val locales = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            val list = LocaleList.getDefault()
-            (0 until list.size()).map { list[it] }
-        } else {
-            listOf(Locale.getDefault())
-        }
-        // Compared as plain codes: creating a Java locale for each of the
-        // 150 language files, or looking up ISO 639-2 codes, takes a third of
-        // a second on a watch. eSpeak uses a two-letter code wherever one
-        // exists, as Android does, so the codes match as they are.
-        val deviceLanguages = locales.map { canonicalLanguage(it.language) }.toSet()
-        val result = mutableSetOf(ENGLISH)
-        for (file in languageFiles(context).values) {
-            val voiceLanguage = canonicalLanguage(file.language.substringBefore('-').lowercase(Locale.ROOT))
-            if (voiceLanguage in deviceLanguages) {
-                result.add(file.dictionary)
-            }
-        }
-        return result.intersect(availableDictionaries(context) + ENGLISH)
+        val dictionary = defaultVoice(context)?.let { dictionaryForVoice(context, it.identifier) }
+        return setOfNotNull(ENGLISH, dictionary).intersect(availableDictionaries(context) + ENGLISH)
     }
+
+    /** The device's language: the first of its languages, as the user ordered them. */
+    @JvmStatic
+    fun deviceLocale(): Locale =
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) LocaleList.getDefault()[0] else Locale.getDefault()
+
+    /**
+     * The one voice a first install turns on: the device language's voice for
+     * its country, else that language's usual one, as EspeakZ language picks
+     * it, such as American English for plain English. American English when
+     * eSpeak does not speak the device's language.
+     */
+    @JvmStatic
+    fun defaultVoice(context: Context, device: Locale = deviceLocale()): Voice? {
+        // Compared as plain codes first: creating a Java locale for each of
+        // the 150 language files takes a third of a second on a watch. eSpeak
+        // uses a two-letter code wherever one exists, as Android does.
+        val language = canonicalLanguage(device.language)
+        val voices = voicesWhere(context) { canonicalLanguage(it.language.substringBefore('-').lowercase(Locale.ROOT)) == language }
+        return EspeakZLanguage.bestVoice(voices, device)
+            ?: voices.minByOrNull { it.name }
+            ?: if (language != ENGLISH) defaultVoice(context, Locale.US) else null
+    }
+
+    /**
+     * The one voice turned on when [dictionary] is added in Voice languages:
+     * the device's country where the device speaks that language, else the
+     * language's usual voice, such as American English for English.
+     */
+    @JvmStatic
+    fun defaultVoiceFor(context: Context, dictionary: String, device: Locale = deviceLocale()): Voice? {
+        val voices = voicesOf(context, dictionary)
+        return EspeakZLanguage.bestVoice(voices, device)
+            ?: EspeakZLanguage.bestVoice(voices, Locale(dictionary))
+            ?: voices.minByOrNull { it.name }
+    }
+
+    /** The voices that speak with [dictionary], installed or not. */
+    @JvmStatic
+    fun voicesOf(context: Context, dictionary: String): List<Voice> = voicesWhere(context) { it.dictionary == dictionary }
+
+    private fun voicesWhere(context: Context, test: (LanguageFile) -> Boolean): List<Voice> =
+        languageFiles(context).values.filter(test)
+            .sortedWith(compareBy({ it.language }, { it.identifier }))
+            .mapNotNull { SpeechSynthesis.voiceFor(it) }
 
     /**
      * Installs exactly [wanted], plus English. Dictionaries the app ships are
@@ -487,8 +527,19 @@ object EspeakData {
      * language where Android knows it, otherwise the name eSpeak's language
      * file gives. Where two dictionaries would share a name, as Mandarin and
      * Cantonese both read "Chinese", the language files' names tell them apart.
+     *
+     * Kept until the device's language changes: building it takes seconds on
+     * a watch, and the settings screen names every installed language with it.
      */
     private fun languageNames(context: Context): Map<String, String> {
+        val locale = Locale.getDefault()
+        languageNames?.let { (cached, names) -> if (cached == locale) return names }
+        val names = buildLanguageNames(context)
+        languageNames = locale to names
+        return names
+    }
+
+    private fun buildLanguageNames(context: Context): Map<String, String> {
         val files = languageFiles(context).values
         val fileNames = HashMap<String, String>()
         val localized = HashMap<String, String>()

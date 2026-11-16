@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Par EspeakZ</string>
+  <string name="about_author">Autors: zapps-ltd</string>
+  <string name="about_summary">Autors: zapps-ltd, versija %s</string>
+  <string name="about_version">Versija %s</string>
+  <string name="about_team_heading">Izstrādātāju komanda</string>
+  <string name="about_team">zapps.ltd izstrādātāji: %1$s un %2$s</string>
+  <string name="about_contact_heading">Kontakti</string>
+  <string name="about_email">E-pasts %1$s</string>
+  <string name="about_home">Apmeklēt zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ ir teksta pārvēršanas runā dzinējs operētājsistēmai Android. Tā ir eSpeak NG Android lietotnes atvase, kas runā ar eSpeak NG runas dzinēju, kurš atbalsta vairāk nekā 100 valodu un akcentu. EspeakZ nav oficiālā eSpeak NG lietotne, un eSpeak NG projekts to neatbalsta. Tā tiek instalēta līdzās oficiālajai lietotnei.</string>
+
+  <string name="about_privacy_heading">Privātums</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ nevāc nekādus datus un nekādu iemeslu dēļ nesavienojas ar internetu. Tā neprasa interneta atļauju.</item>
+    <item>Tas, ko EspeakZ lasa, tās iestatījumi un balsu dati paliek jūsu ierīcē.</item>
+    <item>Izmantojot Divas valodas, EspeakZ otrajā valodā rakstīto tekstu nodod dzinējam, kura balsi izvēlējāties. Tam piemēro paša dzinēja privātuma noteikumus, un balss ar atzīmi „nepieciešams internets” šo tekstu nosūta savam nodrošinātājam.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Par atvasi</string>
+  <string-array name="about_goals">
+    <item>Mērķis: runa jau no pirmā pieprasījuma pēc instalēšanas, neizslēdzot un neieslēdzot dzinēju un bez papildu instalēšanas soļa. Izdarīts.</item>
+    <item>Mērķis: Klatt 6. variants kā noklusējuma balss variants. Izdarīts.</item>
+    <item>Mērķis: lietotnes Android kods pārrakstīts valodā Kotlin. Izdarīts.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Izmaiņas salīdzinājumā ar eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ aizsākās no eSpeak NG 1.53.0, kas izdota 2026. gada 22. septembrī. Tālāk minētās izmaiņas izdarītas 2026. gada oktobrī.</item>
+    <item>Runa no pirmā pieprasījuma: balsu dati tiek instalēti uzreiz, kad lietotne tiek palaista, un dzinējs tos gaida, nevis klusē, tāpēc ekrāna lasītāja pirmie vārdi tiek izrunāti.</item>
+    <item>Balsu valodas: pirmajā palaišanas reizē tiek instalētas jūsu ierīces valodas un angļu valoda. Pievienojiet vai noņemiet valodas sadaļā Iestatījumi, Balsu valodas.</item>
+    <item>Klatt 6. variants ir noklusējuma balss variants.</item>
+    <item>Lietotne ir uzrakstīta valodā Kotlin, un dzinējs nekad netiek pārstartēts, kamēr runā.</item>
+    <item>Ātrāka palaišana: pēc pirmās palaišanas dzinējs ir gatavs dažās simtdaļsekundēs, pat pulkstenī.</item>
+    <item>Pilnāka balss: basu pastiprinājums paaugstina katras balss zemās frekvences par 8 dB, bez kropļojumiem.</item>
+    <item>Labots: balss varianti Announcer un Marcelo atstāja dzinēju mēmu, divi varianti bija uzskaitīti divreiz, un eSpeak vārdnīcas importēšana tagad izmanto Android failu atlasītāju un saglabā turpat, kur lasa dzinējs.</item>
+    <item>Lietotnes nosaukums ir EspeakZ, un tās lietotnes ID ir com.espeakz.app, tāpēc tā tiek instalēta līdzās oficiālajai eSpeak NG lietotnei. Tai ir palaišanas ikona, kas atver tās iestatījumus.</item>
+    <item>Divas valodas: vienlaikus tiek lasītas divas valodas, viena rakstīta ar latīņu burtiem un otra citā alfabētā, piemēram, angļu un arābu, katra ar savu balsi no EspeakZ vai jebkura instalēta dzinēja. Katra valoda saglabā savu balsi, runas ātrumu, toņa augstumu un skaļumu, tāpēc var iestatīt daudzas valodas un izmantot jebkuras divas. Jūs izvēlaties, kura balss lasa skaitļus, pieturzīmes un emocijzīmes, un abas balsis seko cita citai bez pauzēm.</item>
+    <item>Ātrākas atbildes: ar TalkBack katra pieprasījuma pirmā skaņa atskan dažās simtdaļsekundēs, pat pulkstenī, un apturēšana iedarbojas uzreiz.</item>
+    <item>EspeakZ valoda: EspeakZ runā jūsu ierīces valodā, un vienkāršā angļu valoda ir amerikāņu angļu valoda, un tā var izmantot vienu valodu visās lietotnēs.</item>
+    <item>Skaitļus, kas garāki par 6 cipariem, var lasīt pa vienam, diviem vai trim cipariem.</item>
+    <item>Turēt EspeakZ darbībā lūdz Android neiekļaut EspeakZ akumulatora taupīšanā. EspeakZ runā arī bloķēšanas ekrānā.</item>
+    <item>Iestatījumos ir šis ekrāns Par EspeakZ ar autoru, izmaiņām, pateicībām un licenci.</item>
+    <item>Projekta struktūra un būvēšana ir mainīta, lai lietotni varētu būvēt arī sistēmā Windows.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Pateicības</string>
+  <string-array name="about_credits">
+    <item>EspeakZ pastāv pateicoties eSpeak NG projekta un visu tā līdzstrādnieku darbam.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: runas dzinējs, katras valodas balsu dati un oriģinālā Android lietotne, ko uztur Reece H. Dunn un eSpeak NG līdzstrādnieki.</item>
+    <item>eSpeak, ko izveidoja Jonathan Duddington un uz kura balstās eSpeak NG.</item>
+    <item>eSpeak NG Android lietotne, autori Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov un eSpeak NG līdzstrādnieki, ar kodu no Google Inc. un Android Open Source Project.</item>
+    <item>eSpeak NG un tā Android lietotnes valodu uzturētāji un tulkotāji.</item>
+    <item>Bill Cox izveidotā Sonic bibliotēka, kas ļauj sasniegt lielu runas ātrumu.</item>
+    <item>JetBrains izveidotā Kotlin standarta bibliotēka ar Apache License 2.0 licenci.</item>
+  </string-array>
+
+  <string name="about_license_heading">Licence</string>
+  <string-array name="about_license">
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Balstīts uz eSpeak NG, copyright no 2005 līdz 2026 Jonathan Duddington, Reece H. Dunn un eSpeak NG līdzstrādnieki.</item>
+    <item>EspeakZ ir brīva un atvērtā koda programmatūra: varat to izplatīt un mainīt saskaņā ar GNU General Public License noteikumiem, 3. versiju vai jebkuru vēlāku versiju, to pašu licenci, kas eSpeak NG. Licence ir adresē www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Android lietotnes pirmkods un Sonic bibliotēka ir ar licenci Apache License 2.0. Dažām daļām ir savas licences: eSpeak NG failiem ir 2 punktu BSD licence, Unicode datiem Unicode licence, bet NV Access Limited Klatt runas atskaņotājam GNU General Public License 3. vai jaunāka versija.</item>
+    <item>EspeakZ tiek piegādāta bez jebkādas garantijas, ciktāl to pieļauj likums.</item>
+    <item>Pilns EspeakZ pirmkods ar visām izmaiņām ir adresē github.com/zapps-ltd/EspeakZ, ar to pašu licenci. Iestatījumi, EspeakZ vietnē GitHub to atver.</item>
+    <item>Android ir uzņēmuma Google LLC preču zīme.</item>
+  </string-array>
+</resources>

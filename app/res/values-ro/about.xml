@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Despre EspeakZ</string>
+  <string name="about_author">De zapps-ltd</string>
+  <string name="about_summary">De zapps-ltd, versiunea %s</string>
+  <string name="about_version">Versiunea %s</string>
+  <string name="about_team_heading">Echipa de dezvoltatori</string>
+  <string name="about_team">Dezvoltatorii zapps.ltd: %1$s și %2$s</string>
+  <string name="about_contact_heading">Contact</string>
+  <string name="about_email">E-mail %1$s</string>
+  <string name="about_home">Vizitați zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ este un motor de sinteză vocală pentru Android. Este o variantă derivată a aplicației eSpeak NG pentru Android și vorbește cu motorul vocal eSpeak NG, care acceptă peste 100 de limbi și accente. EspeakZ nu este aplicația oficială eSpeak NG și nu este susținut de proiectul eSpeak NG. Se instalează alături de aplicația oficială.</string>
+
+  <string name="about_privacy_heading">Confidențialitate</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ nu colectează nicio dată și nu se conectează la internet din niciun motiv. Nu cere permisiunea de internet.</item>
+    <item>Ceea ce citește EspeakZ, setările sale și datele vocilor rămân pe dispozitivul dvs.</item>
+    <item>Cu Limbi duale, EspeakZ transmite textul în a doua limbă motorului a cărui voce ați ales-o. Se aplică termenii de confidențialitate proprii ai acelui motor, iar o voce marcată „necesită internet” trimite acel text furnizorului său.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Despre varianta derivată</string>
+  <string-array name="about_goals">
+    <item>Obiectiv: vorbire de la prima cerere după instalare, fără oprirea și pornirea motorului și fără un pas suplimentar de instalare. Realizat.</item>
+    <item>Obiectiv: varianta Klatt 6 ca variantă de voce implicită. Realizat.</item>
+    <item>Obiectiv: codul Android al aplicației rescris în Kotlin. Realizat.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Modificări față de eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ a pornit de la eSpeak NG 1.53.0 din 22 septembrie 2026. Modificările de mai jos au fost făcute în octombrie 2026.</item>
+    <item>Vorbire de la prima cerere: datele vocilor se instalează imediat la pornirea aplicației, iar motorul le așteaptă în loc să rămână mut, astfel încât primele cuvinte ale unui cititor de ecran sunt rostite.</item>
+    <item>Limbi pentru voci: la prima pornire se instalează limbile dispozitivului dvs. și engleza. Adăugați sau eliminați limbi în Setări, Limbi pentru voci.</item>
+    <item>Varianta Klatt 6 este varianta de voce implicită.</item>
+    <item>Aplicația este scrisă în Kotlin, iar motorul nu repornește niciodată cât timp vorbește.</item>
+    <item>Pornire mai rapidă: după prima pornire, motorul este gata în câteva sutimi de secundă, chiar și pe un ceas.</item>
+    <item>O voce mai plină: o amplificare a basului ridică frecvențele joase ale fiecărei voci cu 8 dB, fără distorsiuni.</item>
+    <item>Remediat: variantele de voce Announcer și Marcelo lăsau motorul mut, două variante erau listate de două ori, iar Importul dicționarului eSpeak folosește acum selectorul de fișiere Android și salvează unde citește motorul.</item>
+    <item>Aplicația se numește EspeakZ, cu id-ul de aplicație com.espeakz.app, astfel încât se instalează alături de aplicația oficială eSpeak NG. Are o pictogramă de lansare care deschide setările ei.</item>
+    <item>Limbi duale: două limbi sunt citite simultan, una scrisă cu litere latine și una într-un alt alfabet, de exemplu engleza și araba, fiecare cu propria voce din EspeakZ sau din orice motor instalat. Fiecare limbă își păstrează propria voce, viteză de vorbire, înălțime a tonului și volum, astfel încât se pot configura multe și se pot folosi oricare două. Dvs. alegeți ce voce citește numerele, punctuația și emoji-urile, iar cele două voci se succed fără pauze.</item>
+    <item>Răspunsuri mai rapide: cu TalkBack, primul sunet al fiecărei cereri vine în câteva sutimi de secundă, chiar și pe un ceas, iar oprirea are efect imediat.</item>
+    <item>Limba EspeakZ: EspeakZ vorbește în limba dispozitivului dvs., engleza simplă fiind engleza americană, și poate folosi o singură limbă în toate aplicațiile.</item>
+    <item>Numerele mai lungi de 6 cifre pot fi citite câte una, două sau trei cifre odată.</item>
+    <item>Păstrează EspeakZ activ cere Android să excludă EspeakZ din economisirea bateriei. EspeakZ vorbește și pe ecranul de blocare.</item>
+    <item>Setările conțin acest ecran Despre EspeakZ, cu autorul, modificările, mulțumirile și licența.</item>
+    <item>Structura proiectului și compilarea au fost modificate astfel încât aplicația se compilează și pe Windows.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Mulțumiri</string>
+  <string-array name="about_credits">
+    <item>EspeakZ există datorită muncii proiectului eSpeak NG și a tuturor celor care au contribuit la el.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: motorul vocal, datele vocilor pentru fiecare limbă și aplicația Android originală, întreținute de Reece H. Dunn și contribuitorii eSpeak NG.</item>
+    <item>eSpeak, creat de Jonathan Duddington, pe care se bazează eSpeak NG.</item>
+    <item>Aplicația eSpeak NG pentru Android, de Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov și contribuitorii eSpeak NG, cu cod de la Google Inc. și Android Open Source Project.</item>
+    <item>Responsabilii de limbi și traducătorii eSpeak NG și ai aplicației sale Android.</item>
+    <item>Biblioteca Sonic de Bill Cox, care face posibile vitezele mari de vorbire.</item>
+    <item>Biblioteca standard Kotlin de la JetBrains, sub licența Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Licență</string>
+  <string-array name="about_license">
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Bazat pe eSpeak NG, copyright 2005 până în 2026 Jonathan Duddington, Reece H. Dunn și contribuitorii eSpeak NG.</item>
+    <item>EspeakZ este software liber și cu sursă deschisă: îl puteți redistribui și modifica conform termenilor GNU General Public License, versiunea 3 sau orice versiune ulterioară, aceeași licență ca eSpeak NG. Licența se află la www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Sursele aplicației Android și biblioteca Sonic sunt sub Apache License 2.0. Unele părți își păstrează propriile licențe: fișierele din eSpeak NG sub licența BSD cu 2 clauze, datele Unicode sub licența Unicode, iar playerul de vorbire Klatt de la NV Access Limited sub GNU General Public License versiunea 3 sau ulterioară.</item>
+    <item>EspeakZ vine fără nicio garanție, în măsura permisă de lege.</item>
+    <item>Codul sursă complet al EspeakZ, cu toate modificările, se află la github.com/zapps-ltd/EspeakZ, sub aceeași licență. Setări, EspeakZ pe GitHub îl deschide.</item>
+    <item>Android este o marcă comercială a Google LLC.</item>
+  </string-array>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Perihal EspeakZ</string>
+  <string name="about_author">Oleh zapps-ltd</string>
+  <string name="about_summary">Oleh zapps-ltd, versi %s</string>
+  <string name="about_version">Versi %s</string>
+  <string name="about_team_heading">Pasukan pembangun</string>
+  <string name="about_team">Pembangun zapps.ltd: %1$s dan %2$s</string>
+  <string name="about_contact_heading">Hubungi</string>
+  <string name="about_email">E-mel %1$s</string>
+  <string name="about_home">Lawati zapps.ltd</string>
+  <string name="about_copyright">Hak cipta © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ ialah enjin teks ke pertuturan untuk Android. Ia ialah fork aplikasi Android eSpeak NG dan bertutur dengan enjin pertuturan eSpeak NG, yang menyokong lebih daripada 100 bahasa dan loghat. EspeakZ bukan aplikasi eSpeak NG yang rasmi dan tidak disokong oleh projek eSpeak NG. Ia dipasang bersama aplikasi rasmi.</string>
+
+  <string name="about_privacy_heading">Privasi</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ tidak mengumpul sebarang data dan tidak bersambung ke internet atas sebarang sebab. Ia tidak meminta kebenaran internet.</item>
+    <item>Apa yang dibaca oleh EspeakZ, tetapannya dan data suaranya kekal pada peranti anda.</item>
+    <item>Dengan Dwibahasa, EspeakZ menyerahkan teks dalam bahasa kedua kepada enjin bagi suara yang anda pilih. Terma privasi enjin itu sendiri terpakai padanya, dan suara yang ditandakan «perlukan internet» menghantar teks itu kepada penyedianya.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Perihal fork</string>
+  <string-array name="about_goals">
+    <item>Matlamat: pertuturan sejak permintaan pertama selepas pemasangan, tanpa mematikan dan menghidupkan enjin dan tanpa langkah pemasangan tambahan. Selesai.</item>
+    <item>Matlamat: varian Klatt 6 sebagai varian suara lalai. Selesai.</item>
+    <item>Matlamat: kod Android aplikasi ditulis semula dalam Kotlin. Selesai.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Perubahan daripada eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ bermula daripada eSpeak NG 1.53.0 bertarikh 22 September 2026. Perubahan di bawah dibuat pada Oktober 2026.</item>
+    <item>Pertuturan sejak permintaan pertama: data suara dipasang sebaik sahaja aplikasi bermula, dan enjin menunggunya dan bukannya diam, supaya kata-kata pertama pembaca skrin dituturkan.</item>
+    <item>Bahasa suara: permulaan pertama memasang bahasa peranti anda dan bahasa Inggeris. Tambah atau buang bahasa dalam Tetapan, Bahasa suara.</item>
+    <item>Varian Klatt 6 ialah varian suara lalai.</item>
+    <item>Aplikasi ini ditulis dalam Kotlin, dan enjin tidak pernah dimulakan semula semasa bertutur.</item>
+    <item>Permulaan lebih pantas: selepas permulaan pertama, enjin sedia dalam beberapa perseratus saat, malah pada jam tangan.</item>
+    <item>Suara yang lebih penuh: peningkatan bes menaikkan frekuensi rendah setiap suara sebanyak 8 dB, tanpa herotan.</item>
+    <item>Dibetulkan: varian suara Announcer dan Marcelo membiarkan enjin senyap, dua varian disenaraikan dua kali, dan Import kamus eSpeak kini menggunakan pemilih fail Android dan menyimpan di tempat enjin membaca.</item>
+    <item>Aplikasi ini dinamakan EspeakZ, dengan id aplikasi com.espeakz.app, supaya ia dipasang bersama aplikasi eSpeak NG yang rasmi. Ia mempunyai ikon pelancar yang membuka tetapannya.</item>
+    <item>Dwibahasa: dua bahasa dibaca serentak, satu ditulis dalam huruf Latin dan satu lagi dalam abjad lain, seperti bahasa Inggeris dan bahasa Arab, masing-masing oleh suaranya sendiri daripada EspeakZ atau mana-mana enjin yang dipasang. Setiap bahasa mengekalkan suara, kadar pertuturan, nada dan kelantangan sendiri, jadi banyak bahasa boleh disediakan dan mana-mana dua boleh digunakan. Anda memilih suara yang membaca nombor, tanda baca dan emoji, dan kedua-dua suara itu bersambung tanpa jurang.</item>
+    <item>Jawapan lebih pantas: dengan TalkBack, bunyi pertama bagi setiap permintaan tiba dalam beberapa perseratus saat, malah pada jam tangan, dan penghentian berkuat kuasa serta-merta.</item>
+    <item>Bahasa EspeakZ: EspeakZ bertutur dalam bahasa peranti anda, dengan bahasa Inggeris biasa ialah bahasa Inggeris Amerika, dan boleh menggunakan satu bahasa dalam semua aplikasi.</item>
+    <item>Nombor yang lebih panjang daripada 6 digit boleh dibaca satu, dua atau tiga digit pada satu masa.</item>
+    <item>Teruskan EspeakZ berjalan meminta Android supaya mengecualikan EspeakZ daripada penjimatan bateri. EspeakZ juga bertutur pada skrin kunci.</item>
+    <item>Tetapan mempunyai skrin Perihal EspeakZ ini yang memaparkan pengarang, perubahan, penghargaan dan lesen.</item>
+    <item>Susun atur projek dan binaan telah diubah supaya aplikasi dapat dibina pada Windows juga.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Penghargaan</string>
+  <string-array name="about_credits">
+    <item>EspeakZ wujud hasil kerja projek eSpeak NG dan semua yang menyumbang kepadanya.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: enjin pertuturan, data suara untuk setiap bahasa dan aplikasi Android asal, diselenggara oleh Reece H. Dunn dan penyumbang eSpeak NG.</item>
+    <item>eSpeak, dicipta oleh Jonathan Duddington, yang menjadi asas eSpeak NG.</item>
+    <item>Aplikasi Android eSpeak NG, oleh Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov dan penyumbang eSpeak NG, dengan kod daripada Google Inc. dan Android Open Source Project.</item>
+    <item>Penyelenggara bahasa dan penterjemah eSpeak NG dan aplikasi Androidnya.</item>
+    <item>Pustaka Sonic oleh Bill Cox, yang memungkinkan kadar pertuturan yang tinggi.</item>
+    <item>Pustaka standard Kotlin oleh JetBrains, di bawah Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Lesen</string>
+  <string-array name="about_license">
+    <item>EspeakZ, hak cipta 2026 ZAPPS SOFTWARE LTD. Berdasarkan eSpeak NG, hak cipta 2005 hingga 2026 Jonathan Duddington, Reece H. Dunn dan penyumbang eSpeak NG.</item>
+    <item>EspeakZ ialah perisian bebas dan sumber terbuka: anda boleh mengedarkannya semula dan mengubahnya di bawah terma GNU General Public License, versi 3 atau mana-mana versi yang lebih baharu, lesen yang sama dengan eSpeak NG. Lesen itu terdapat di www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Sumber aplikasi Android dan pustaka Sonic berada di bawah Apache License 2.0. Sesetengah bahagian mengekalkan lesen masing-masing: fail daripada eSpeak NG di bawah lesen BSD 2 fasal, data Unicode di bawah lesen Unicode, dan pemain pertuturan Klatt oleh NV Access Limited di bawah GNU General Public License versi 3 atau lebih baharu.</item>
+    <item>EspeakZ tidak disertakan dengan sebarang waranti, setakat yang dibenarkan oleh undang-undang.</item>
+    <item>Kod sumber lengkap EspeakZ, dengan semua perubahan, terdapat di github.com/zapps-ltd/EspeakZ, di bawah lesen yang sama. Tetapan, EspeakZ di GitHub membukanya.</item>
+    <item>Android ialah tanda dagangan Google LLC.</item>
+  </string-array>
+</resources>

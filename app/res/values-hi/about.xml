@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">EspeakZ के बारे में</string>
+  <string name="about_author">zapps-ltd द्वारा</string>
+  <string name="about_summary">zapps-ltd द्वारा, संस्करण %s</string>
+  <string name="about_version">संस्करण %s</string>
+  <string name="about_team_heading">डेवलपर टीम</string>
+  <string name="about_team">zapps.ltd के डेवलपर: %1$s और %2$s</string>
+  <string name="about_contact_heading">संपर्क</string>
+  <string name="about_email">ईमेल %1$s</string>
+  <string name="about_home">zapps.ltd पर जाएँ</string>
+  <string name="about_copyright">कॉपीराइट © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ Android के लिए एक टेक्स्ट-टू-स्पीच इंजन है। यह eSpeak NG Android ऐप का फोर्क है और eSpeak NG स्पीच इंजन से बोलता है, जो 100 से अधिक भाषाओं और लहजों का समर्थन करता है। EspeakZ आधिकारिक eSpeak NG ऐप नहीं है और eSpeak NG प्रोजेक्ट द्वारा समर्थित नहीं है। यह आधिकारिक ऐप के साथ-साथ इंस्टॉल होता है।</string>
+
+  <string name="about_privacy_heading">गोपनीयता</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ कोई डेटा इकट्ठा नहीं करता और किसी भी कारण से इंटरनेट से नहीं जुड़ता। यह इंटरनेट की अनुमति भी नहीं माँगता।</item>
+    <item>EspeakZ जो पढ़ता है, उसकी सेटिंग और उसका आवाज़ डेटा आपके डिवाइस पर ही रहते हैं।</item>
+    <item>दोहरी भाषाओं के साथ, EspeakZ दूसरी भाषा का टेक्स्ट उस इंजन को देता है जिसकी आवाज़ आपने चुनी है। उस पर उस इंजन की अपनी गोपनीयता शर्तें लागू होती हैं, और «इंटरनेट चाहिए» चिह्नित आवाज़ वह टेक्स्ट अपने प्रदाता को भेजती है।</item>
+  </string-array>
+
+  <string name="about_goals_heading">फोर्क के बारे में</string>
+  <string-array name="about_goals">
+    <item>लक्ष्य: इंस्टॉल के बाद पहले ही अनुरोध से आवाज़, इंजन को बंद और चालू किए बिना और बिना किसी अतिरिक्त इंस्टॉल चरण के। पूरा हुआ।</item>
+    <item>लक्ष्य: Klatt वेरिएंट 6 डिफ़ॉल्ट आवाज़ वेरिएंट के रूप में। पूरा हुआ।</item>
+    <item>लक्ष्य: ऐप का Android कोड Kotlin में दोबारा लिखा गया। पूरा हुआ।</item>
+  </string-array>
+
+  <string name="about_changes_heading">eSpeak NG से बदलाव</string>
+  <string-array name="about_changes">
+    <item>EspeakZ की शुरुआत 22 सितंबर 2026 के eSpeak NG 1.53.0 से हुई। नीचे दिए बदलाव अक्टूबर 2026 में किए गए।</item>
+    <item>पहले अनुरोध से आवाज़: ऐप शुरू होते ही आवाज़ डेटा इंस्टॉल हो जाता है और इंजन चुप रहने के बजाय उसका इंतज़ार करता है, इसलिए स्क्रीन रीडर के पहले शब्द बोले जाते हैं।</item>
+    <item>आवाज़ की भाषाएँ: पहली बार शुरू होने पर आपके डिवाइस की भाषाएँ और अंग्रेज़ी इंस्टॉल होती हैं। सेटिंग, आवाज़ की भाषाएँ में भाषाएँ जोड़ें या हटाएँ।</item>
+    <item>Klatt वेरिएंट 6 डिफ़ॉल्ट आवाज़ वेरिएंट है।</item>
+    <item>ऐप Kotlin में लिखा गया है, और बोलते समय इंजन कभी दोबारा शुरू नहीं होता।</item>
+    <item>तेज़ शुरुआत: पहली शुरुआत के बाद इंजन एक सेकंड के कुछ सौवें हिस्से में तैयार हो जाता है, घड़ी पर भी।</item>
+    <item>भरी हुई आवाज़: बास बूस्ट हर आवाज़ की कम आवृत्तियों को बिना विकृति के 8 डेसिबल बढ़ा देता है।</item>
+    <item>ठीक किया गया: Announcer और Marcelo आवाज़ वेरिएंट इंजन को चुप कर देते थे, दो वेरिएंट दो बार सूचीबद्ध थे, और eSpeak शब्दकोश आयात अब Android के फ़ाइल चयनकर्ता का उपयोग करता है और वहाँ सहेजता है जहाँ से इंजन पढ़ता है।</item>
+    <item>ऐप का नाम EspeakZ है, एप्लिकेशन आईडी com.espeakz.app है, इसलिए यह आधिकारिक eSpeak NG ऐप के साथ-साथ इंस्टॉल होता है। इसका एक लॉन्चर आइकन है जो इसकी सेटिंग खोलता है।</item>
+    <item>दोहरी भाषाएँ: दो भाषाएँ एक साथ पढ़ी जाती हैं, एक लैटिन अक्षरों में लिखी और एक दूसरी लिपि में, जैसे अंग्रेज़ी और अरबी, हर एक अपनी आवाज़ से, EspeakZ या किसी भी इंस्टॉल किए इंजन की। हर भाषा अपनी आवाज़, बोलने की गति, पिच और वॉल्यूम रखती है, इसलिए कई भाषाएँ सेट की जा सकती हैं और कोई भी दो इस्तेमाल हो सकती हैं। आप चुनते हैं कि संख्याएँ, विराम चिह्न और इमोजी कौन सी आवाज़ पढ़े, और दोनों आवाज़ें बिना अंतराल के एक के बाद एक आती हैं।</item>
+    <item>तेज़ जवाब: TalkBack के साथ हर अनुरोध की पहली आवाज़ एक सेकंड के कुछ सौवें हिस्से में आती है, घड़ी पर भी, और रोकना तुरंत असर करता है।</item>
+    <item>EspeakZ की भाषा: EspeakZ आपके डिवाइस की भाषा में बोलता है, सादी अंग्रेज़ी का मतलब अमेरिकी अंग्रेज़ी है, और सभी ऐप में एक ही भाषा इस्तेमाल कर सकता है।</item>
+    <item>6 अंकों से लंबी संख्याएँ एक, दो या तीन अंक एक बार में पढ़ी जा सकती हैं।</item>
+    <item>EspeakZ को चालू रखें, Android से कहता है कि EspeakZ को बैटरी बचत से बाहर रखे। EspeakZ लॉक स्क्रीन पर भी बोलता है।</item>
+    <item>सेटिंग में यह EspeakZ के बारे में स्क्रीन है, जिसमें लेखक, बदलाव, श्रेय और लाइसेंस हैं।</item>
+    <item>प्रोजेक्ट की संरचना और बिल्ड बदले गए ताकि ऐप Windows पर भी बन सके।</item>
+  </string-array>
+
+  <string name="about_credits_heading">श्रेय</string>
+  <string-array name="about_credits">
+    <item>EspeakZ eSpeak NG प्रोजेक्ट के काम और उसमें योगदान देने वाले सभी लोगों की वजह से मौजूद है।</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: स्पीच इंजन, हर भाषा का आवाज़ डेटा और मूल Android ऐप, जिसका रखरखाव Reece H. Dunn और eSpeak NG के योगदानकर्ता करते हैं।</item>
+    <item>eSpeak, जिसे Jonathan Duddington ने बनाया, और जिस पर eSpeak NG आधारित है।</item>
+    <item>eSpeak NG Android ऐप, Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov और eSpeak NG के योगदानकर्ताओं द्वारा, Google Inc. और Android Open Source Project के कोड के साथ।</item>
+    <item>eSpeak NG और उसके Android ऐप के भाषा रखरखावकर्ता और अनुवादक।</item>
+    <item>Bill Cox की Sonic लाइब्रेरी, जो तेज़ बोलने की गति संभव बनाती है।</item>
+    <item>JetBrains की Kotlin स्टैंडर्ड लाइब्रेरी, Apache License 2.0 के अंतर्गत।</item>
+  </string-array>
+
+  <string name="about_license_heading">लाइसेंस</string>
+  <string-array name="about_license">
+    <item>EspeakZ, कॉपीराइट 2026 ZAPPS SOFTWARE LTD. eSpeak NG पर आधारित, कॉपीराइट 2005 से 2026 Jonathan Duddington, Reece H. Dunn और eSpeak NG के योगदानकर्ता।</item>
+    <item>EspeakZ मुफ़्त और ओपन सोर्स सॉफ़्टवेयर है: आप इसे GNU General Public License, संस्करण 3 या किसी भी बाद के संस्करण की शर्तों के अधीन दोबारा वितरित और बदल सकते हैं, जो eSpeak NG का ही लाइसेंस है। लाइसेंस www.gnu.org/licenses/gpl-3.0.html पर है।</item>
+    <item>Android ऐप के स्रोत और Sonic लाइब्रेरी Apache License 2.0 के अधीन हैं। कुछ भाग अपने स्वयं के लाइसेंस रखते हैं: eSpeak NG की फ़ाइलें 2-क्लॉज़ BSD लाइसेंस के अधीन, Unicode डेटा Unicode लाइसेंस के अधीन, और NV Access Limited का Klatt स्पीच प्लेयर GNU General Public License संस्करण 3 या बाद के संस्करण के अधीन है।</item>
+    <item>EspeakZ बिना किसी वारंटी के आता है, कानून द्वारा अनुमत सीमा तक।</item>
+    <item>EspeakZ का पूरा सोर्स कोड, सभी बदलावों के साथ, github.com/zapps-ltd/EspeakZ पर है, उसी लाइसेंस के अधीन। सेटिंग, GitHub पर EspeakZ उसे खोलता है।</item>
+    <item>Android, Google LLC का ट्रेडमार्क है।</item>
+  </string-array>
+</resources>

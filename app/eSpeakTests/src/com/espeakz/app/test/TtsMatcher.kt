@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  * Copyright (C) 2014 Reece H. Dunn
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

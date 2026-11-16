@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  * Copyright (C) 2012-2015 Reece H. Dunn
  * Copyright (C) 2011 Google Inc.
  *
@@ -278,30 +278,6 @@ class SpeechSynthesis(context: Context, private val callback: SynthReadyCallback
     /** Every voice, installed or not, for checking [allVoices] against [nativeVoices]. */
     internal fun indexedVoices(): List<Voice> = allVoices()
 
-    private fun parseVoice(name: String, identifier: String, gender: Int, age: Int): Voice? {
-        try {
-            if (identifier == "asia/fa-en-us") {
-                throw IllegalArgumentException("Voice '$identifier' is a duplicate voice.")
-            }
-            val locale = localeFromLanguageName(name)
-                ?: throw IllegalArgumentException("Locale not supported.")
-            if (locale.isO3Language.isEmpty()) {
-                throw IllegalArgumentException("Language '${locale.language}' not supported.")
-            }
-            if (locale.isO3Country.isEmpty() && locale.country.isNotEmpty()) {
-                throw IllegalArgumentException("Country '${locale.country}' not supported.")
-            }
-            return Voice(name, identifier, gender, age, locale)
-        } catch (e: MissingResourceException) {
-            // Thrown when the 3-letter language (e.g. nci) or country (e.g.
-            // 021) code is missing for a locale.
-            Log.d(TAG, "getAvailableVoices: skipping $name => ${e.message}")
-        } catch (e: IllegalArgumentException) {
-            Log.d(TAG, "getAvailableVoices: skipping $name => ${e.message}")
-        }
-        return null
-    }
-
     private val isReady: Boolean
         get() = initializedPath != null
 
@@ -333,6 +309,35 @@ class SpeechSynthesis(context: Context, private val callback: SynthReadyCallback
         const val AGE_ANY = 0
         const val AGE_YOUNG = 12
         const val AGE_OLD = 60
+
+        /** The voice a language file stands for, or null when Android has no locale for it. */
+        @JvmStatic
+        fun voiceFor(file: EspeakData.LanguageFile): Voice? =
+            parseVoice(file.language, file.identifier, GENDER_MALE, AGE_ANY)
+
+        private fun parseVoice(name: String, identifier: String, gender: Int, age: Int): Voice? {
+            try {
+                if (identifier == "asia/fa-en-us") {
+                    throw IllegalArgumentException("Voice '$identifier' is a duplicate voice.")
+                }
+                val locale = localeFromLanguageName(name)
+                    ?: throw IllegalArgumentException("Locale not supported.")
+                if (locale.isO3Language.isEmpty()) {
+                    throw IllegalArgumentException("Language '${locale.language}' not supported.")
+                }
+                if (locale.isO3Country.isEmpty() && locale.country.isNotEmpty()) {
+                    throw IllegalArgumentException("Country '${locale.country}' not supported.")
+                }
+                return Voice(name, identifier, gender, age, locale)
+            } catch (e: MissingResourceException) {
+                // Thrown when the 3-letter language (e.g. nci) or country (e.g.
+                // 021) code is missing for a locale.
+                Log.d(TAG, "getAvailableVoices: skipping $name => ${e.message}")
+            } catch (e: IllegalArgumentException) {
+                Log.d(TAG, "getAvailableVoices: skipping $name => ${e.message}")
+            }
+            return null
+        }
 
         const val CHANNEL_COUNT_MONO = 1
         const val FORMAT_PCM_S16 = 2

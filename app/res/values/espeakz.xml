@@ -53,5 +53,5 @@
   <string name="dual_non_latin_voice">Non-Latin language voice</string>
   <string name="github_title">EspeakZ on GitHub</string>
   <string name="github_summary">The source code, the changes and new versions</string>
-  <string name="github_no_browser">This device has no web browser to open github.com/iqdz/EspeakZ with.</string>
+  <string name="github_no_browser">This device has no web browser to open github.com/zapps-ltd/EspeakZ with.</string>
 </resources>

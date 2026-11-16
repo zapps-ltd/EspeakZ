@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Apie EspeakZ</string>
+  <string name="about_author">Autorius: zapps-ltd</string>
+  <string name="about_summary">Autorius: zapps-ltd, versija %s</string>
+  <string name="about_version">Versija %s</string>
+  <string name="about_team_heading">Kūrėjų komanda</string>
+  <string name="about_team">zapps.ltd kūrėjai: %1$s ir %2$s</string>
+  <string name="about_contact_heading">Kontaktai</string>
+  <string name="about_email">El. paštas %1$s</string>
+  <string name="about_home">Aplankyti zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ yra teksto vertimo į kalbą variklis, skirtas Android. Tai eSpeak NG Android programos atšaka, kuri kalba eSpeak NG kalbos varikliu, palaikančiu daugiau nei 100 kalbų ir akcentų. EspeakZ nėra oficiali eSpeak NG programa ir eSpeak NG projektas jos nepalaiko. Ji įdiegiama kartu su oficialia programa.</string>
+
+  <string name="about_privacy_heading">Privatumas</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ nerenka jokių duomenų ir jokiu tikslu nesijungia prie interneto. Ji neprašo interneto leidimo.</item>
+    <item>Tai, ką EspeakZ skaito, jos nustatymai ir balsų duomenys lieka jūsų įrenginyje.</item>
+    <item>Naudojant Dvi kalbas, EspeakZ antrąja kalba parašytą tekstą perduoda varikliui, kurio balsą pasirinkote. Jam taikomos paties variklio privatumo sąlygos, o balsas, pažymėtas „reikia interneto“, siunčia tą tekstą savo teikėjui.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Apie atšaką</string>
+  <string-array name="about_goals">
+    <item>Tikslas: kalba nuo pat pirmos užklausos po įdiegimo, neišjungiant ir neįjungiant variklio ir be papildomo įdiegimo žingsnio. Padaryta.</item>
+    <item>Tikslas: Klatt 6 variantas kaip numatytasis balso variantas. Padaryta.</item>
+    <item>Tikslas: programos Android kodas perrašytas Kotlin kalba. Padaryta.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Pakeitimai, palyginti su eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ pradėta nuo eSpeak NG 1.53.0, išleistos 2026 m. rugsėjo 22 d. Toliau nurodyti pakeitimai padaryti 2026 m. spalį.</item>
+    <item>Kalba nuo pirmos užklausos: balsų duomenys įdiegiami vos paleidus programą, o variklis jų laukia, užuot tylėjęs, todėl ekrano skaitytuvo pirmieji žodžiai ištariami.</item>
+    <item>Balsų kalbos: pirmą kartą paleidus įdiegiamos jūsų įrenginio kalbos ir anglų kalba. Kalbas pridėkite arba pašalinkite skiltyje Nustatymai, Balsų kalbos.</item>
+    <item>Klatt 6 variantas yra numatytasis balso variantas.</item>
+    <item>Programa parašyta Kotlin kalba, o variklis niekada nepaleidžiamas iš naujo, kol kalba.</item>
+    <item>Greitesnis paleidimas: po pirmojo paleidimo variklis paruoštas per kelias šimtąsias sekundės dalis, net laikrodyje.</item>
+    <item>Pilnesnis balsas: žemų dažnių sustiprinimas pakelia kiekvieno balso žemus dažnius 8 dB, be iškraipymų.</item>
+    <item>Ištaisyta: balso variantai Announcer ir Marcelo palikdavo variklį nebylį, du variantai buvo išvardyti dukart, o eSpeak žodyno importas dabar naudoja Android failų parinkiklį ir išsaugo ten, kur skaito variklis.</item>
+    <item>Programa vadinasi EspeakZ, jos programos ID com.espeakz.app, todėl ji įdiegiama kartu su oficialia eSpeak NG programa. Ji turi paleidimo piktogramą, kuri atidaro jos nustatymus.</item>
+    <item>Dvi kalbos: kartu skaitomos dvi kalbos, viena rašoma lotyniškomis raidėmis, kita kita abėcėle, pavyzdžiui, anglų ir arabų, kiekviena savo balsu iš EspeakZ arba bet kurio įdiegto variklio. Kiekviena kalba išlaiko savo balsą, kalbos greitį, tono aukštį ir garsumą, todėl galima nustatyti daug kalbų ir naudoti bet kurias dvi. Jūs pasirenkate, kuris balsas skaito skaičius, skyrybos ženklus ir jaustukus, o abu balsai seka vienas kitą be pauzių.</item>
+    <item>Greitesni atsakymai: su TalkBack pirmasis kiekvienos užklausos garsas pasigirsta per kelias šimtąsias sekundės dalis, net laikrodyje, o sustabdymas įsigalioja iškart.</item>
+    <item>EspeakZ kalba: EspeakZ kalba jūsų įrenginio kalba, o paprasta anglų kalba yra amerikiečių anglų kalba, ir gali naudoti vieną kalbą visose programose.</item>
+    <item>Ilgesni nei 6 skaitmenų skaičiai gali būti skaitomi po vieną, du ar tris skaitmenis.</item>
+    <item>Laikyti EspeakZ veikiančią prašo Android neįtraukti EspeakZ į akumuliatoriaus tausojimą. EspeakZ kalba ir užrakintame ekrane.</item>
+    <item>Nustatymuose yra šis ekranas Apie EspeakZ su autoriumi, pakeitimais, padėkomis ir licencija.</item>
+    <item>Projekto struktūra ir kūrimas pakeisti, kad programą būtų galima sukurti ir sistemoje Windows.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Padėkos</string>
+  <string-array name="about_credits">
+    <item>EspeakZ egzistuoja dėl eSpeak NG projekto ir visų prie jo prisidėjusių žmonių darbo.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: kalbos variklis, kiekvienos kalbos balsų duomenys ir originali Android programa, kuriuos prižiūri Reece H. Dunn ir eSpeak NG bendradarbiai.</item>
+    <item>eSpeak, kurį sukūrė Jonathan Duddington ir kuriuo grindžiamas eSpeak NG.</item>
+    <item>eSpeak NG Android programa, autoriai Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov ir eSpeak NG bendradarbiai, su Google Inc. ir Android Open Source Project kodu.</item>
+    <item>eSpeak NG ir jo Android programos kalbų prižiūrėtojai ir vertėjai.</item>
+    <item>Bill Cox sukurta Sonic biblioteka, leidžianti didelį kalbos greitį.</item>
+    <item>JetBrains sukurta Kotlin standartinė biblioteka, licencijuota pagal Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Licencija</string>
+  <string-array name="about_license">
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Pagrįsta eSpeak NG, copyright nuo 2005 iki 2026 Jonathan Duddington, Reece H. Dunn ir eSpeak NG bendradarbiai.</item>
+    <item>EspeakZ yra laisva ir atvirojo kodo programinė įranga: galite ją platinti ir keisti pagal GNU General Public License sąlygas, 3 versiją arba bet kurią vėlesnę versiją, tą pačią licenciją kaip ir eSpeak NG. Licencija yra adresu www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Android programos šaltinio kodas ir Sonic biblioteka licencijuoti pagal Apache License 2.0. Kai kurios dalys turi savo licencijas: eSpeak NG failai pagal 2 punktų BSD licenciją, Unicode duomenys pagal Unicode licenciją, o NV Access Limited Klatt kalbos grotuvas pagal GNU General Public License 3 ar vėlesnę versiją.</item>
+    <item>EspeakZ teikiama be jokios garantijos, kiek tai leidžia įstatymai.</item>
+    <item>Visas EspeakZ šaltinio kodas su visais pakeitimais yra github.com/zapps-ltd/EspeakZ, pagal tą pačią licenciją. Nustatymai, EspeakZ GitHub jį atidaro.</item>
+    <item>Android yra Google LLC prekių ženklas.</item>
+  </string-array>
+</resources>

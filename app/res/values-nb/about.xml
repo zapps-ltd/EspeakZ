@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Om EspeakZ</string>
+  <string name="about_author">Av zapps-ltd</string>
+  <string name="about_summary">Av zapps-ltd, versjon %s</string>
+  <string name="about_version">Versjon %s</string>
+  <string name="about_team_heading">Utviklerteam</string>
+  <string name="about_team">Utviklere hos zapps.ltd: %1$s og %2$s</string>
+  <string name="about_contact_heading">Kontakt</string>
+  <string name="about_email">E-post %1$s</string>
+  <string name="about_home">Besøk zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ er en talesyntesemotor for Android. Den er en fork av Android-appen eSpeak NG og snakker med talemotoren eSpeak NG, som støtter mer enn 100 språk og aksenter. EspeakZ er ikke den offisielle eSpeak NG-appen og er ikke godkjent av eSpeak NG-prosjektet. Den installeres ved siden av den offisielle appen.</string>
+
+  <string name="about_privacy_heading">Personvern</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ samler ikke inn data og kobler seg ikke til internett av noen grunn. Den ber ikke om tillatelsen for internett.</item>
+    <item>Det EspeakZ leser opp, innstillingene og stemmedataene blir på enheten din.</item>
+    <item>Med To språk gir EspeakZ teksten på det andre språket til motoren hvis stemme du har valgt. Den motorens egne personvernvilkår gjelder for den, og en stemme merket «trenger internett» sender den teksten til leverandøren sin.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Om forken</string>
+  <string-array name="about_goals">
+    <item>Mål: tale fra aller første forespørsel etter installasjonen, uten å slå motoren av og på og uten et ekstra installasjonstrinn. Ferdig.</item>
+    <item>Mål: Klatt-variant 6 som standard stemmevariant. Ferdig.</item>
+    <item>Mål: appens Android-kode skrevet om i Kotlin. Ferdig.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Endringer fra eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ startet fra eSpeak NG 1.53.0 av 22. september 2026. Endringene nedenfor ble gjort i oktober 2026.</item>
+    <item>Tale fra første forespørsel: stemmedataene installeres i det øyeblikket appen starter, og motoren venter på dem i stedet for å være stille, slik at de første ordene til en skjermleser blir sagt.</item>
+    <item>Stemmespråk: ved første start installeres språkene på enheten din og engelsk. Legg til eller fjern språk i Innstillinger, Stemmespråk.</item>
+    <item>Klatt-variant 6 er standard stemmevariant.</item>
+    <item>Appen er skrevet i Kotlin, og motoren starter aldri på nytt mens den snakker.</item>
+    <item>Raskere start: etter første start er motoren klar på noen hundredels sekunder, selv på en klokke.</item>
+    <item>En fyldigere stemme: en bassforsterkning løfter de lave frekvensene i hver stemme med 8 dB, uten forvrengning.</item>
+    <item>Rettet: stemmevariantene Announcer og Marcelo gjorde motoren stille, to varianter sto to ganger i listen, og Import eSpeak dictionary bruker nå Androids filvelger og lagrer der motoren leser.</item>
+    <item>Appen heter EspeakZ, med applikasjons-ID com.espeakz.app, slik at den installeres ved siden av den offisielle eSpeak NG-appen. Den har et startikon som åpner innstillingene.</item>
+    <item>To språk: to språk leses samtidig, ett skrevet med latinske bokstaver og ett med et annet alfabet, for eksempel engelsk og arabisk, hvert med sin egen stemme fra EspeakZ eller en hvilken som helst installert motor. Hvert språk beholder sin egen stemme, talehastighet, tonehøyde og volum, slik at mange kan settes opp og to brukes. Du velger hvilken stemme som leser tall, tegnsetting og emojier, og de to stemmene følger hverandre uten opphold.</item>
+    <item>Raskere svar: med TalkBack kommer den første lyden for hver forespørsel innen noen hundredels sekunder, selv på en klokke, og et stopp virker med en gang.</item>
+    <item>EspeakZ-språk: EspeakZ snakker på språket til enheten din, der vanlig engelsk er amerikansk engelsk, og kan bruke ett språk i alle apper.</item>
+    <item>Tall med mer enn 6 sifre kan leses opp ett, to eller tre sifre om gangen.</item>
+    <item>Keep EspeakZ running ber Android om å holde EspeakZ utenfor batterisparing. EspeakZ snakker også på låseskjermen.</item>
+    <item>Innstillingene har denne skjermen Om EspeakZ med opphavspersonen, endringene, takkene og lisensen.</item>
+    <item>Prosjektstrukturen og byggingen ble endret slik at appen også kan bygges på Windows.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Takk</string>
+  <string-array name="about_credits">
+    <item>EspeakZ finnes takket være arbeidet til eSpeak NG-prosjektet og alle som har bidratt til det.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: talemotoren, stemmedataene for hvert språk og den opprinnelige Android-appen, vedlikeholdt av Reece H. Dunn og bidragsyterne til eSpeak NG.</item>
+    <item>eSpeak, laget av Jonathan Duddington, som eSpeak NG er basert på.</item>
+    <item>Android-appen eSpeak NG, av Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov og bidragsyterne til eSpeak NG, med kode fra Google Inc. og Android Open Source Project.</item>
+    <item>Språkansvarlige og oversettere for eSpeak NG og Android-appen.</item>
+    <item>Sonic-biblioteket av Bill Cox, som gjør høye talehastigheter mulig.</item>
+    <item>Standardbiblioteket til Kotlin fra JetBrains, under Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Lisens</string>
+  <string-array name="about_license">
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Basert på eSpeak NG, copyright 2005 til 2026 Jonathan Duddington, Reece H. Dunn og bidragsyterne til eSpeak NG.</item>
+    <item>EspeakZ er fri programvare med åpen kildekode: du kan videredistribuere den og endre den på vilkårene i GNU General Public License, versjon 3 eller en senere versjon, samme lisens som eSpeak NG. Lisensen finnes på www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Kildekoden til Android-appen og Sonic-biblioteket er under Apache License 2.0. Noen deler beholder sine egne lisenser: filer fra eSpeak NG er under BSD-lisensen med 2 klausuler, Unicode-data under Unicode-lisensen, og Klatt-taleavspilleren fra NV Access Limited under GNU General Public License versjon 3 eller nyere.</item>
+    <item>EspeakZ leveres uten garanti, i den grad loven tillater det.</item>
+    <item>Hele kildekoden til EspeakZ, med alle endringer, ligger på github.com/zapps-ltd/EspeakZ, under samme lisens. Innstillinger, EspeakZ på GitHub åpner den.</item>
+    <item>Android er et varemerke tilhørende Google LLC.</item>
+  </string-array>
+</resources>

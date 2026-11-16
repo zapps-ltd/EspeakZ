@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Az EspeakZ névjegye</string>
+  <string name="about_author">Készítő: zapps-ltd</string>
+  <string name="about_summary">Készítő: zapps-ltd, verzió: %s</string>
+  <string name="about_version">Verzió: %s</string>
+  <string name="about_team_heading">Fejlesztői csapat</string>
+  <string name="about_team">A zapps.ltd fejlesztői: %1$s és %2$s</string>
+  <string name="about_contact_heading">Kapcsolat</string>
+  <string name="about_email">E-mail: %1$s</string>
+  <string name="about_home">A zapps.ltd meglátogatása</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">Az EspeakZ egy Androidos szövegfelolvasó motor. Az eSpeak NG Androidos alkalmazásának leágazása, és az eSpeak NG beszédmotorjával szólal meg, amely több mint 100 nyelvet és akcentust támogat. Az EspeakZ nem a hivatalos eSpeak NG alkalmazás, és az eSpeak NG projekt nem támogatja. A hivatalos alkalmazás mellett települ.</string>
+
+  <string name="about_privacy_heading">Adatvédelem</string>
+  <string-array name="about_privacy">
+    <item>Az EspeakZ semmilyen adatot nem gyűjt, és semmilyen okból nem csatlakozik az internethez. Nem kér internetengedélyt.</item>
+    <item>Amit az EspeakZ felolvas, a beállításai és a hangadatai az eszközén maradnak.</item>
+    <item>A Két nyelv funkcióval az EspeakZ a második nyelvű szöveget annak a motornak adja át, amelynek hangját kiválasztotta. Erre a motor saját adatvédelmi feltételei vonatkoznak, és az „internetet igényel” jelölésű hang a szolgáltatójának küldi el ezt a szöveget.</item>
+  </string-array>
+
+  <string name="about_goals_heading">A leágazásról</string>
+  <string-array name="about_goals">
+    <item>Cél: beszéd a telepítés utáni legelső kéréstől, a motor ki- és bekapcsolása nélkül, külön telepítési lépés nélkül. Kész.</item>
+    <item>Cél: a Klatt 6-os változat legyen az alapértelmezett hangváltozat. Kész.</item>
+    <item>Cél: az alkalmazás Android kódjának átírása Kotlinra. Kész.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Változások az eSpeak NG-hez képest</string>
+  <string-array name="about_changes">
+    <item>Az EspeakZ az eSpeak NG 2026. szeptember 22-i 1.53.0 verziójából indult. Az alábbi változtatások 2026 októberében készültek.</item>
+    <item>Beszéd az első kéréstől: a hangadatok az alkalmazás indulásakor azonnal települnek, a motor pedig vár rájuk ahelyett, hogy hallgatna, így a képernyőolvasó első szavai is elhangzanak.</item>
+    <item>Hangnyelvek: az első indításkor települ az eszköz nyelve és az angol. Nyelveket a Beállítások, Hangnyelvek menüpontban adhat hozzá vagy távolíthat el.</item>
+    <item>A Klatt 6-os változat az alapértelmezett hangváltozat.</item>
+    <item>Az alkalmazás Kotlinban készült, és a motor soha nem indul újra beszéd közben.</item>
+    <item>Gyorsabb indulás: az első indítás után a motor néhány századmásodperc alatt kész, még órán is.</item>
+    <item>Teltebb hang: a mélyemelés minden hang mély frekvenciáit 8 dB-lel emeli, torzítás nélkül.</item>
+    <item>Javítva: az Announcer és a Marcelo hangváltozat némán hagyta a motort, két változat kétszer szerepelt a listán, az eSpeak szótár importálása pedig most az Android fájlválasztóját használja, és oda ment, ahol a motor olvas.</item>
+    <item>Az alkalmazás neve EspeakZ, alkalmazásazonosítója com.espeakz.app, így a hivatalos eSpeak NG alkalmazás mellett települ. Van indítóikonja, amely megnyitja a beállításait.</item>
+    <item>Két nyelv: egyszerre két nyelv olvasható fel, az egyik latin betűs, a másik más írásrendszerű, például angol és arab, mindkettő a saját hangján az EspeakZ-ből vagy bármely telepített motorból. Minden nyelv megtartja saját hangját, beszédsebességét, hangmagasságát és hangerejét, így sok nyelv beállítható, és bármelyik kettő használható. Ön választja ki, melyik hang olvassa fel a számokat, az írásjeleket és az emojikat, és a két hang szünet nélkül követi egymást.</item>
+    <item>Gyorsabb válaszok: TalkBackkel minden kérés első hangja néhány századmásodpercen belül megszólal, még órán is, és a leállítás azonnal hatásos.</item>
+    <item>EspeakZ nyelve: az EspeakZ az eszköz nyelvén beszél, az egyszerű angol amerikai angol, és minden alkalmazásban használhat egy nyelvet.</item>
+    <item>A 6 számjegynél hosszabb számok egy, két vagy három számjegyenként is felolvashatók.</item>
+    <item>Az EspeakZ futva tartása arra kéri az Androidot, hogy az EspeakZ-t hagyja ki az akkumulátorkímélésből. Az EspeakZ a zárolási képernyőn is beszél.</item>
+    <item>A beállítások között megtalálható ez az Az EspeakZ névjegye képernyő a készítővel, a változásokkal, a közreműködőkkel és a licenccel.</item>
+    <item>A projekt felépítése és a fordítás megváltozott, így az alkalmazás Windowson is lefordítható.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Közreműködők</string>
+  <string-array name="about_credits">
+    <item>Az EspeakZ az eSpeak NG projekt és minden közreműködőjének munkája miatt létezik.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: a beszédmotor, minden nyelv hangadatai és az eredeti Androidos alkalmazás, amelyet Reece H. Dunn és az eSpeak NG közreműködői gondoznak.</item>
+    <item>Az eSpeak, amelyet Jonathan Duddington készített, és amelyre az eSpeak NG épül.</item>
+    <item>Az eSpeak NG Androidos alkalmazása, szerzői Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov és az eSpeak NG közreműködői, a Google Inc. és az Android Open Source Project kódjával.</item>
+    <item>Az eSpeak NG és Androidos alkalmazásának nyelvi gondozói és fordítói.</item>
+    <item>A Bill Cox által készített Sonic könyvtár, amely lehetővé teszi a nagy beszédsebességet.</item>
+    <item>A JetBrains Kotlin szabványkönyvtára, az Apache License 2.0 alatt.</item>
+  </string-array>
+
+  <string name="about_license_heading">Licenc</string>
+  <string-array name="about_license">
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Az eSpeak NG-n alapul, copyright 2005 és 2026 között Jonathan Duddington, Reece H. Dunn és az eSpeak NG közreműködői.</item>
+    <item>Az EspeakZ szabad és nyílt forráskódú szoftver: a GNU General Public License 3. vagy bármely későbbi verziójának feltételei szerint terjesztheti és módosíthatja, ugyanazon licenc alatt, mint az eSpeak NG. A licenc a www.gnu.org/licenses/gpl-3.0.html címen található.</item>
+    <item>Az Android-alkalmazás forráskódja és a Sonic könyvtár az Apache License 2.0 alatt áll. Egyes részek megtartják saját licencüket: az eSpeak NG fájljai a 2 záradékos BSD licenc, a Unicode-adatok a Unicode licenc, az NV Access Limited Klatt beszédlejátszója pedig a GNU General Public License 3-as vagy újabb verziója alatt állnak.</item>
+    <item>Az EspeakZ garancia nélkül érkezik, a törvény által megengedett mértékben.</item>
+    <item>Az EspeakZ teljes forráskódja minden változtatással a github.com/zapps-ltd/EspeakZ címen érhető el, ugyanazon licenc alatt. A Beállítások, EspeakZ a GitHubon megnyitja.</item>
+    <item>Az Android a Google LLC védjegye.</item>
+  </string-array>
+</resources>

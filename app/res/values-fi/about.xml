@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">Tietoja: EspeakZ</string>
+  <string name="about_author">Tekijä: zapps-ltd</string>
+  <string name="about_summary">Tekijä: zapps-ltd, versio %s</string>
+  <string name="about_version">Versio %s</string>
+  <string name="about_team_heading">Kehittäjätiimi</string>
+  <string name="about_team">zapps.ltd-kehittäjät: %1$s ja %2$s</string>
+  <string name="about_contact_heading">Yhteystiedot</string>
+  <string name="about_email">Sähköposti %1$s</string>
+  <string name="about_home">Käy osoitteessa zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ on Androidin tekstistä puheeksi -moottori. Se on eSpeak NG -Android-sovelluksen fork ja puhuu eSpeak NG -puhemoottorilla, joka tukee yli 100 kieltä ja aksenttia. EspeakZ ei ole virallinen eSpeak NG -sovellus, eikä eSpeak NG -projekti ole hyväksynyt sitä. Se asentuu virallisen sovelluksen rinnalle.</string>
+
+  <string name="about_privacy_heading">Tietosuoja</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ ei kerää mitään tietoja eikä muodosta yhteyttä internetiin mistään syystä. Se ei pyydä internet-oikeutta.</item>
+    <item>Se, mitä EspeakZ lukee, sen asetukset ja sen äänidata pysyvät laitteellasi.</item>
+    <item>Kaksoiskielet-toiminnossa EspeakZ antaa toisen kielen tekstin moottorille, jonka äänen olet valinnut. Kyseisen moottorin omat tietosuojaehdot koskevat sitä, ja ääni, jossa lukee ”vaatii internetin”, lähettää tekstin palveluntarjoajalleen.</item>
+  </string-array>
+
+  <string name="about_goals_heading">Tietoja forkista</string>
+  <string-array name="about_goals">
+    <item>Tavoite: puhe heti asennuksen jälkeisestä ensimmäisestä pyynnöstä alkaen, ilman että moottoria tarvitsee sammuttaa ja käynnistää ja ilman ylimääräistä asennusvaihetta. Valmis.</item>
+    <item>Tavoite: Klatt-variantti 6 oletusäänivarianttina. Valmis.</item>
+    <item>Tavoite: sovelluksen Android-koodi kirjoitettu uudelleen Kotlinilla. Valmis.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Muutokset eSpeak NG:hen verrattuna</string>
+  <string-array name="about_changes">
+    <item>EspeakZ lähti liikkeelle eSpeak NG 1.53.0 -versiosta 22. syyskuuta 2026. Alla olevat muutokset tehtiin lokakuussa 2026.</item>
+    <item>Puhe ensimmäisestä pyynnöstä alkaen: äänidata asentuu heti, kun sovellus käynnistyy, ja moottori odottaa sitä eikä pysy hiljaa, joten ruudunlukijan ensimmäiset sanat puhutaan.</item>
+    <item>Äänikielet: ensimmäisessä käynnistyksessä asennetaan laitteesi kielet ja englanti. Lisää tai poista kieliä kohdassa Asetukset, Äänikielet.</item>
+    <item>Klatt-variantti 6 on oletusäänivariantti.</item>
+    <item>Sovellus on kirjoitettu Kotlinilla, eikä moottori koskaan käynnisty uudelleen puhuessaan.</item>
+    <item>Nopeampi käynnistys: ensimmäisen käynnistyksen jälkeen moottori on valmis muutamassa sadasosasekunnissa, jopa kellossa.</item>
+    <item>Täyteläisempi ääni: bassonkorostus nostaa jokaisen äänen matalia taajuuksia 8 dB ilman säröä.</item>
+    <item>Korjattu: Announcer- ja Marcelo-äänivariantit jättivät moottorin hiljaiseksi, kaksi varianttia oli luettelossa kahdesti, ja Import eSpeak dictionary käyttää nyt Androidin tiedostovalitsinta ja tallentaa sinne, mistä moottori lukee.</item>
+    <item>Sovelluksen nimi on EspeakZ ja sovellustunnus com.espeakz.app, joten se asentuu virallisen eSpeak NG -sovelluksen rinnalle. Siinä on käynnistyskuvake, joka avaa sen asetukset.</item>
+    <item>Kaksoiskielet: kaksi kieltä luetaan yhtä aikaa, toinen latinalaisilla kirjaimilla ja toinen toisella aakkostolla kirjoitettuna, esimerkiksi englanti ja arabia, kumpikin omalla äänellään EspeakZ:sta tai mistä tahansa asennetusta moottorista. Jokainen kieli säilyttää oman äänensä, puhenopeutensa, äänenkorkeutensa ja äänenvoimakkuutensa, joten monta voidaan määrittää ja kahta käyttää. Valitset, mikä ääni lukee numerot, välimerkit ja emojit, ja kaksi ääntä seuraavat toisiaan ilman taukoja.</item>
+    <item>Nopeammat vastaukset: TalkBackillä kunkin pyynnön ensimmäinen ääni kuuluu muutamassa sadasosasekunnissa, jopa kellossa, ja pysäytys tehoaa heti.</item>
+    <item>EspeakZ-kieli: EspeakZ puhuu laitteesi kielellä, jolloin pelkkä englanti on amerikanenglantia, ja voi käyttää yhtä kieltä kaikissa sovelluksissa.</item>
+    <item>Yli 6 numeron mittaiset luvut voidaan lukea yksi, kaksi tai kolme numeroa kerrallaan.</item>
+    <item>Keep EspeakZ running pyytää Androidia jättämään EspeakZ:n akkua säästävien toimintojen ulkopuolelle. EspeakZ puhuu myös lukitusnäytöllä.</item>
+    <item>Asetuksissa on tämä Tietoja: EspeakZ -näyttö, jossa on tekijä, muutokset, kiitokset ja lisenssi.</item>
+    <item>Projektin rakennetta ja koontia muutettiin niin, että sovellus voidaan koota myös Windowsissa.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Kiitokset</string>
+  <string-array name="about_credits">
+    <item>EspeakZ on olemassa eSpeak NG -projektin ja kaikkien siihen osallistuneiden työn ansiosta.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: puhemoottori, jokaisen kielen äänidata ja alkuperäinen Android-sovellus, jota ylläpitävät Reece H. Dunn ja eSpeak NG:n avustajat.</item>
+    <item>eSpeak, jonka loi Jonathan Duddington ja johon eSpeak NG perustuu.</item>
+    <item>eSpeak NG -Android-sovellus, tekijät Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov ja eSpeak NG:n avustajat, koodia Google Inc.:ltä ja Android Open Source Projectilta.</item>
+    <item>eSpeak NG:n ja sen Android-sovelluksen kielten ylläpitäjät ja kääntäjät.</item>
+    <item>Bill Coxin Sonic-kirjasto, joka mahdollistaa suuret puhenopeudet.</item>
+    <item>JetBrainsin Kotlin-standardikirjasto, lisenssinä Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Lisenssi</string>
+  <string-array name="about_license">
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Perustuu eSpeak NG:hen, copyright 2005–2026 Jonathan Duddington, Reece H. Dunn ja eSpeak NG:n avustajat.</item>
+    <item>EspeakZ on vapaa avoimen lähdekoodin ohjelmisto: voit levittää sitä edelleen ja muuttaa sitä GNU General Public License -lisenssin ehtojen mukaisesti, versio 3 tai mikä tahansa myöhempi versio, sama lisenssi kuin eSpeak NG:ssä. Lisenssi on osoitteessa www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Android-sovelluksen lähdekoodi ja Sonic-kirjasto ovat Apache License 2.0 -lisenssin alaisia. Joillakin osilla on omat lisenssinsä: eSpeak NG:n tiedostoilla 2 lausekkeen BSD-lisenssi, Unicode-tiedoilla Unicode-lisenssi ja NV Access Limitedin Klatt-puhesoittimella GNU General Public License -lisenssin versio 3 tai uudempi.</item>
+    <item>EspeakZ toimitetaan ilman takuuta lain sallimissa rajoissa.</item>
+    <item>EspeakZ:n täydellinen lähdekoodi kaikkine muutoksineen on osoitteessa github.com/zapps-ltd/EspeakZ samalla lisenssillä. Asetukset, EspeakZ GitHubissa avaa sen.</item>
+    <item>Android on Google LLC:n tavaramerkki.</item>
+  </string-array>
+</resources>

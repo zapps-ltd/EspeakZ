@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">حول EspeakZ</string>
+  <string name="about_author">من zapps-ltd</string>
+  <string name="about_summary">من zapps-ltd، الإصدار %s</string>
+  <string name="about_version">الإصدار %s</string>
+  <string name="about_team_heading">فريق المطورين</string>
+  <string name="about_team">مطورو zapps.ltd: %1$s و%2$s</string>
+  <string name="about_contact_heading">التواصل</string>
+  <string name="about_email">البريد الإلكتروني %1$s</string>
+  <string name="about_home">زيارة zapps.ltd</string>
+  <string name="about_copyright">حقوق النشر © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ محرك تحويل النص إلى كلام لنظام Android. وهو نسخة متفرعة من تطبيق eSpeak NG لنظام Android، ويتحدث بمحرك الكلام eSpeak NG الذي يدعم أكثر من 100 لغة ولهجة. EspeakZ ليس التطبيق الرسمي eSpeak NG ولا يحظى بتأييد مشروع eSpeak NG. ويُثبّت إلى جانب التطبيق الرسمي.</string>
+
+  <string name="about_privacy_heading">الخصوصية</string>
+  <string-array name="about_privacy">
+    <item>لا يجمع EspeakZ أي بيانات ولا يتصل بالإنترنت لأي سبب. ولا يطلب إذن الوصول إلى الإنترنت.</item>
+    <item>ما يقرؤه EspeakZ وإعداداته وبيانات الأصوات تبقى على جهازك.</item>
+    <item>مع اللغتين المزدوجتين، يمرر EspeakZ النص باللغة الثانية إلى المحرك الذي اخترت صوته. وتنطبق شروط الخصوصية الخاصة بذلك المحرك عليه، والصوت الذي يحمل علامة «يحتاج إلى إنترنت» يرسل ذلك النص إلى مزوده.</item>
+  </string-array>
+
+  <string name="about_goals_heading">حول النسخة المتفرعة</string>
+  <string-array name="about_goals">
+    <item>الهدف: كلام منذ أول طلب بعد التثبيت، دون إيقاف المحرك وتشغيله ودون خطوة تثبيت إضافية. تم.</item>
+    <item>الهدف: Klatt النوع 6 كنوع الصوت الافتراضي. تم.</item>
+    <item>الهدف: إعادة كتابة شيفرة Android الخاصة بالتطبيق بلغة Kotlin. تم.</item>
+  </string-array>
+
+  <string name="about_changes_heading">التغييرات عن eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>بدأ EspeakZ من eSpeak NG الإصدار 1.53.0 بتاريخ 22 سبتمبر 2026. أُجريت التغييرات التالية في أكتوبر 2026.</item>
+    <item>الكلام من أول طلب: تُثبّت بيانات الصوت لحظة بدء التطبيق، وينتظرها المحرك بدلاً من البقاء صامتاً، فتُنطق أولى كلمات قارئ الشاشة.</item>
+    <item>لغات الصوت: عند أول تشغيل تُثبّت لغات جهازك واللغة الإنجليزية. أضف اللغات أو أزلها من الإعدادات، لغات الصوت.</item>
+    <item>Klatt النوع 6 هو نوع الصوت الافتراضي.</item>
+    <item>كُتب التطبيق بلغة Kotlin، ولا يُعاد تشغيل المحرك أثناء الكلام.</item>
+    <item>بدء أسرع: بعد أول تشغيل يكون المحرك جاهزاً في بضعة أجزاء من المئة من الثانية، حتى على ساعة.</item>
+    <item>صوت أكثر امتلاءً: تعزيز للجهير يرفع الترددات المنخفضة لكل صوت بمقدار 8 ديسيبل دون تشويه.</item>
+    <item>تم الإصلاح: كان نوعا الصوت Announcer وMarcelo يتركان المحرك صامتاً، وكان نوعان مدرجين مرتين، ويستخدم استيراد قاموس eSpeak الآن أداة اختيار الملفات في Android ويحفظ في المكان الذي يقرأ منه المحرك.</item>
+    <item>اسم التطبيق EspeakZ ومعرّف التطبيق com.espeakz.app، لذا يُثبّت إلى جانب تطبيق eSpeak NG الرسمي. وله أيقونة في شاشة التشغيل تفتح إعداداته.</item>
+    <item>اللغتان المزدوجتان: تُقرأ لغتان معاً، إحداهما مكتوبة بالحروف اللاتينية والأخرى بأبجدية أخرى، مثل الإنجليزية والعربية، كل منهما بصوتها الخاص من EspeakZ أو من أي محرك مثبت. تحتفظ كل لغة بصوتها وسرعة كلامها ودرجة صوتها ومستوى صوتها، فيمكن إعداد عدد كبير منها واستخدام أي اثنتين. وأنت تختار الصوت الذي يقرأ الأرقام وعلامات الترقيم والرموز التعبيرية، ويتبع الصوتان أحدهما الآخر دون فجوات.</item>
+    <item>إجابات أسرع: مع TalkBack يصدر أول صوت لكل طلب خلال بضعة أجزاء من المئة من الثانية، حتى على ساعة، ويسري الإيقاف فوراً.</item>
+    <item>لغة EspeakZ: يتحدث EspeakZ بلغة جهازك، والإنجليزية العادية هي الإنجليزية الأمريكية، ويمكنه استخدام لغة واحدة في كل التطبيقات.</item>
+    <item>يمكن قراءة الأرقام التي تزيد على 6 أرقام رقماً واحداً أو رقمين أو ثلاثة أرقام في كل مرة.</item>
+    <item>خيار إبقاء EspeakZ قيد التشغيل يطلب من Android استثناء EspeakZ من توفير البطارية. ويتحدث EspeakZ على شاشة القفل أيضاً.</item>
+    <item>تحتوي الإعدادات على شاشة حول EspeakZ هذه، وفيها المؤلف والتغييرات والشكر والتقدير والترخيص.</item>
+    <item>عُدّل هيكل المشروع وطريقة البناء ليُبنى التطبيق على Windows أيضاً.</item>
+  </string-array>
+
+  <string name="about_credits_heading">الشكر والتقدير</string>
+  <string-array name="about_credits">
+    <item>يوجد EspeakZ بفضل عمل مشروع eSpeak NG وكل من ساهم فيه.</item>
+    <item>eSpeak NG، github.com/espeak-ng/espeak-ng: محرك الكلام وبيانات الصوت لكل لغة وتطبيق Android الأصلي، ويشرف عليه Reece H. Dunn ومساهمو eSpeak NG.</item>
+    <item>eSpeak، من إنشاء Jonathan Duddington، وهو الأساس الذي يقوم عليه eSpeak NG.</item>
+    <item>تطبيق eSpeak NG لنظام Android، من Reece H. Dunn وBeka Gozalishvili وAlexandr Epaneshnikov ومساهمي eSpeak NG، مع شيفرة من Google Inc. وAndroid Open Source Project.</item>
+    <item>مشرفو اللغات ومترجمو eSpeak NG وتطبيقه لنظام Android.</item>
+    <item>مكتبة Sonic من Bill Cox، التي تجعل سرعات الكلام العالية ممكنة.</item>
+    <item>المكتبة القياسية للغة Kotlin من JetBrains، بموجب Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">الترخيص</string>
+  <string-array name="about_license">
+    <item>EspeakZ، حقوق النشر 2026 ZAPPS SOFTWARE LTD. مبني على eSpeak NG، حقوق النشر من 2005 إلى 2026 Jonathan Duddington وReece H. Dunn ومساهمو eSpeak NG.</item>
+    <item>EspeakZ برنامج حر ومفتوح المصدر: يمكنك إعادة توزيعه وتعديله وفق شروط GNU General Public License، الإصدار 3 أو أي إصدار لاحق، وهو الترخيص نفسه الخاص بـ eSpeak NG. الترخيص متاح على www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>مصادر تطبيق Android ومكتبة Sonic مرخصة بموجب Apache License 2.0. وتحتفظ بعض الأجزاء بتراخيصها الخاصة: ملفات من eSpeak NG بموجب ترخيص BSD-2-Clause، وبيانات Unicode بموجب ترخيص Unicode، ومشغّل الكلام Klatt من NV Access Limited بموجب GNU General Public License الإصدار 3 أو أحدث.</item>
+    <item>يأتي EspeakZ دون أي ضمان، بالقدر الذي يسمح به القانون.</item>
+    <item>الشيفرة المصدرية الكاملة لـ EspeakZ، مع كل التغييرات، على github.com/zapps-ltd/EspeakZ، بالترخيص نفسه. ويفتحها الخيار الإعدادات، EspeakZ على GitHub.</item>
+    <item>Android علامة تجارية لشركة Google LLC.</item>
+  </string-array>
+</resources>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,11 +56,6 @@ class LanguagePickerPreference(context: Context) : DialogPreference(context, nul
         super.showDialog(state)
         val list = (dialog as? AlertDialog)?.listView ?: return
         list.leaveOnTab()
-        val index = codes.indexOf(current)
-        if (index < 0) return
-        list.post {
-            list.setSelection(index)
-            list.requestFocus()
-        }
+        list.openOn(codes.indexOf(current))
     }
 }

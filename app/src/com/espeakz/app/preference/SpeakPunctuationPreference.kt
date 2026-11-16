@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026 Harith Alhamdani
+ * Copyright (C) 2026 ZAPPS SOFTWARE LTD
  * Copyright (C) 2022 Beka Gozalishvili
  * Copyright (C) 2013 Reece H. Dunn
  *

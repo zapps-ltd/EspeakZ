@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">EspeakZについて</string>
+  <string name="about_author">開発元: zapps-ltd</string>
+  <string name="about_summary">開発元: zapps-ltd、バージョン %s</string>
+  <string name="about_version">バージョン %s</string>
+  <string name="about_team_heading">開発チーム</string>
+  <string name="about_team">zapps.ltd の開発者: %1$s、%2$s</string>
+  <string name="about_contact_heading">連絡先</string>
+  <string name="about_email">メール %1$s</string>
+  <string name="about_home">zapps.ltd を開く</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZは、Android用の音声合成エンジンです。eSpeak NG Androidアプリのフォークで、100を超える言語とアクセントに対応するeSpeak NG音声エンジンで読み上げます。EspeakZは公式のeSpeak NGアプリではなく、eSpeak NGプロジェクトの承認を受けたものでもありません。公式アプリと並べてインストールできます。</string>
+
+  <string name="about_privacy_heading">プライバシー</string>
+  <string-array name="about_privacy">
+    <item>EspeakZはデータを一切収集せず、いかなる理由でもインターネットに接続しません。インターネットの権限も要求しません。</item>
+    <item>EspeakZが読み上げる内容、設定、音声データは、お使いの端末の中にとどまります。</item>
+    <item>デュアル言語を使うと、EspeakZは2番目の言語のテキストを、あなたが選んだ音声のエンジンに渡します。そのテキストにはそのエンジン自身のプライバシー規約が適用され、「インターネットが必要」と表示された音声は、そのテキストを提供元に送信します。</item>
+  </string-array>
+
+  <string name="about_goals_heading">フォークについて</string>
+  <string-array name="about_goals">
+    <item>目標: インストール後の最初のリクエストから音声を出すこと。エンジンのオフとオンの切り替えも、追加のインストール手順も不要にします。達成済み。</item>
+    <item>目標: Klatt バリアント 6 を標準の音声バリアントにすること。達成済み。</item>
+    <item>目標: アプリのAndroidコードをKotlinで書き直すこと。達成済み。</item>
+  </string-array>
+
+  <string name="about_changes_heading">eSpeak NGからの変更点</string>
+  <string-array name="about_changes">
+    <item>EspeakZは、2026年9月22日のeSpeak NG 1.53.0から始まりました。以下の変更は2026年10月に行われました。</item>
+    <item>最初のリクエストから音声が出ます。アプリの起動と同時に音声データがインストールされ、エンジンは無音のままにならずそれを待つので、スクリーンリーダーの最初の言葉も読み上げられます。</item>
+    <item>音声言語: 初回起動時に、端末の言語と英語がインストールされます。言語の追加と削除は、設定の音声言語で行えます。</item>
+    <item>Klatt バリアント 6 が標準の音声バリアントです。</item>
+    <item>アプリはKotlinで書かれており、読み上げ中にエンジンが再起動することはありません。</item>
+    <item>起動が高速になりました。初回起動後は、ウォッチでも、エンジンは100分の数秒で準備できます。</item>
+    <item>より豊かな音声: 低音ブーストにより、すべての音声の低域が歪みなく8 dB持ち上がります。</item>
+    <item>修正: AnnouncerとMarceloの音声バリアントでエンジンが無音になる問題、2つのバリアントが二重に表示される問題を修正しました。また、eSpeak辞書のインポートはAndroidのファイルピッカーを使い、エンジンが読み込む場所に保存するようになりました。</item>
+    <item>アプリ名はEspeakZ、アプリケーションIDはcom.espeakz.appで、公式のeSpeak NGアプリと並べてインストールできます。設定を開くランチャーアイコンがあります。</item>
+    <item>デュアル言語: ラテン文字で書かれた言語と別の文字体系の言語(たとえば英語とアラビア語)の2つの言語を同時に読み上げます。それぞれEspeakZまたはインストール済みの任意のエンジンの専用の音声で読みます。各言語が独自の音声、読み上げ速度、ピッチ、音量を保持するので、多くの言語を設定しておき、そのうち2つを使えます。数字、句読点、絵文字をどちらの音声で読むかを選べます。2つの音声は間を空けずに続けて読み上げます。</item>
+    <item>より速い応答: TalkBackでは、各リクエストの最初の音が、ウォッチでも100分の数秒以内に出て、停止はすぐに効きます。</item>
+    <item>EspeakZの言語: EspeakZは端末の言語で表示され、英語はアメリカ英語です。また、すべてのアプリで1つの言語を使うこともできます。</item>
+    <item>6桁を超える数字は、1桁ずつ、2桁ずつ、または3桁ずつ読み上げられます。</item>
+    <item>「EspeakZを常に実行」は、EspeakZをバッテリーの節約の対象から外すようAndroidに求めます。EspeakZはロック画面でも読み上げます。</item>
+    <item>設定には、作者、変更点、クレジット、ライセンスを表示するこの「EspeakZについて」画面があります。</item>
+    <item>プロジェクトの構成とビルドを変更し、Windowsでもアプリをビルドできるようにしました。</item>
+  </string-array>
+
+  <string name="about_credits_heading">クレジット</string>
+  <string-array name="about_credits">
+    <item>EspeakZは、eSpeak NGプロジェクトと、それに貢献したすべての方々の成果によって成り立っています。</item>
+    <item>eSpeak NG、github.com/espeak-ng/espeak-ng: 音声エンジン、すべての言語の音声データ、元のAndroidアプリ。Reece H. DunnとeSpeak NGの貢献者が保守しています。</item>
+    <item>eSpeak、作者はJonathan Duddington。eSpeak NGはこれをもとにしています。</item>
+    <item>eSpeak NG Androidアプリ、作者はReece H. Dunn、Beka Gozalishvili、Alexandr EpaneshnikovとeSpeak NGの貢献者で、Google Inc.とAndroid Open Source Projectのコードを含みます。</item>
+    <item>eSpeak NGとそのAndroidアプリの言語メンテナーと翻訳者の皆さん。</item>
+    <item>Bill CoxによるSonicライブラリ。高い読み上げ速度を可能にしています。</item>
+    <item>JetBrainsによるKotlin標準ライブラリ。Apache License 2.0のもとで提供されています。</item>
+  </string-array>
+
+  <string name="about_license_heading">ライセンス</string>
+  <string-array name="about_license">
+    <item>EspeakZ、copyright 2026 ZAPPS SOFTWARE LTD。eSpeak NGをもとにしており、copyright 2005 to 2026 Jonathan Duddington、Reece H. Dunn、eSpeak NGの貢献者。</item>
+    <item>EspeakZは無料のオープンソースソフトウェアです。eSpeak NGと同じGNU General Public License、バージョン3または それ以降のバージョンの条件のもとで、再配布および変更できます。ライセンスはwww.gnu.org/licenses/gpl-3.0.htmlにあります。</item>
+    <item>AndroidアプリのソースとSonicライブラリはApache License 2.0のもとにあります。一部はそれぞれのライセンスを保ちます。eSpeak NGのファイルは2条項BSDライセンス、UnicodeデータはUnicodeライセンス、NV Access LimitedのKlatt音声プレーヤーはGNU General Public Licenseバージョン3以降です。</item>
+    <item>EspeakZは、法律で認められる範囲で、いかなる保証もありません。</item>
+    <item>変更をすべて含むEspeakZの完全なソースコードは、github.com/zapps-ltd/EspeakZにあり、同じライセンスのもとにあります。設定のGitHubのEspeakZで開けます。</item>
+    <item>Androidは Google LLC の商標です。</item>
+  </string-array>
+</resources>

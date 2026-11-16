@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation of values/about.xml, the About EspeakZ screen. Keep it in step with it.
+-->
+<resources>
+  <string name="about_title">O aplikaciji EspeakZ</string>
+  <string name="about_author">Avtor: zapps-ltd</string>
+  <string name="about_summary">Avtor: zapps-ltd, različica %s</string>
+  <string name="about_version">Različica %s</string>
+  <string name="about_team_heading">Skupina razvijalcev</string>
+  <string name="about_team">Razvijalci zapps.ltd: %1$s in %2$s</string>
+  <string name="about_contact_heading">Stik</string>
+  <string name="about_email">E-pošta %1$s</string>
+  <string name="about_home">Obišči zapps.ltd</string>
+  <string name="about_copyright">Copyright © 2026 ZAPPS SOFTWARE LTD.</string>
+  <string name="about_intro">EspeakZ je mehanizem za pretvorbo besedila v govor za Android. Je različica aplikacije eSpeak NG za Android in govori z govornim mehanizmom eSpeak NG, ki podpira več kot 100 jezikov in narečij. EspeakZ ni uradna aplikacija eSpeak NG in je projekt eSpeak NG ne podpira. Namesti se poleg uradne aplikacije.</string>
+
+  <string name="about_privacy_heading">Zasebnost</string>
+  <string-array name="about_privacy">
+    <item>EspeakZ ne zbira nobenih podatkov in se iz nobenega razloga ne povezuje z internetom. Ne zahteva dovoljenja za internet.</item>
+    <item>Kar EspeakZ bere, njegove nastavitve in podatki glasov ostanejo v vaši napravi.</item>
+    <item>Pri funkciji Dva jezika EspeakZ preda besedilo v drugem jeziku mehanizmu, katerega glas ste izbrali. Zanj veljajo lastni pogoji zasebnosti tega mehanizma, glas z oznako »potrebuje internet« pa to besedilo pošlje svojemu ponudniku.</item>
+  </string-array>
+
+  <string name="about_goals_heading">O različici</string>
+  <string-array name="about_goals">
+    <item>Cilj: govor že od prve zahteve po namestitvi, brez izklapljanja in vklapljanja mehanizma in brez dodatnega koraka namestitve. Narejeno.</item>
+    <item>Cilj: Klatt različica 6 kot privzeta različica glasu. Narejeno.</item>
+    <item>Cilj: koda aplikacije za Android prepisana v Kotlin. Narejeno.</item>
+  </string-array>
+
+  <string name="about_changes_heading">Spremembe glede na eSpeak NG</string>
+  <string-array name="about_changes">
+    <item>EspeakZ izhaja iz eSpeak NG 1.53.0 z dne 22. septembra 2026. Spodnje spremembe so nastale oktobra 2026.</item>
+    <item>Govor od prve zahteve: podatki glasov se namestijo takoj ob zagonu aplikacije, mehanizem pa jih počaka in ne molči, tako da so prve besede bralnika zaslona izgovorjene.</item>
+    <item>Jeziki glasov: ob prvem zagonu se namestijo jeziki vaše naprave in angleščina. Jezike dodajte ali odstranite v Nastavitvah, Jeziki glasov.</item>
+    <item>Klatt različica 6 je privzeta različica glasu.</item>
+    <item>Aplikacija je napisana v Kotlinu, mehanizem pa se med govorjenjem nikoli ne znova zažene.</item>
+    <item>Hitrejši zagon: po prvem zagonu je mehanizem pripravljen v nekaj stotinkah sekunde, tudi na uri.</item>
+    <item>Polnejši glas: poudarek basov dvigne nizke frekvence vsakega glasu za 8 dB, brez popačenja.</item>
+    <item>Popravljeno: različici glasu Announcer in Marcelo sta pustili mehanizem nem, dve različici sta bili navedeni dvakrat, Uvoz slovarja eSpeak pa zdaj uporablja izbirnik datotek sistema Android in shrani tja, kjer mehanizem bere.</item>
+    <item>Aplikacija se imenuje EspeakZ z ID-jem aplikacije com.espeakz.app, zato se namesti poleg uradne aplikacije eSpeak NG. Ima ikono zaganjalnika, ki odpre njene nastavitve.</item>
+    <item>Dva jezika: hkrati se bereta dva jezika, eden zapisan z latinico in drugi z drugo pisavo, na primer angleščina in arabščina, vsak z lastnim glasom iz EspeakZ ali katerega koli nameščenega mehanizma. Vsak jezik obdrži svoj glas, hitrost govora, višino tona in glasnost, zato lahko nastavite več jezikov in uporabite poljubna dva. Izberete, kateri glas bere številke, ločila in emojije, glasova pa se nadaljujeta brez presledkov.</item>
+    <item>Hitrejši odgovori: s TalkBack se prvi zvok vsake zahteve oglasi v nekaj stotinkah sekunde, tudi na uri, ustavitev pa deluje takoj.</item>
+    <item>Jezik EspeakZ: EspeakZ govori v jeziku vaše naprave, pri čemer je navadna angleščina ameriška angleščina, in lahko uporablja en jezik v vseh aplikacijah.</item>
+    <item>Številke, daljše od 6 števk, se lahko berejo po eno, dve ali tri števke naenkrat.</item>
+    <item>Naj EspeakZ teče od Androida zahteva, naj EspeakZ izvzame iz varčevanja z baterijo. EspeakZ govori tudi na zaklenjenem zaslonu.</item>
+    <item>Nastavitve vsebujejo ta zaslon O aplikaciji EspeakZ z avtorjem, spremembami, zahvalami in licenco.</item>
+    <item>Zgradba projekta in gradnja sta bili spremenjeni, tako da se aplikacija lahko gradi tudi v sistemu Windows.</item>
+  </string-array>
+
+  <string name="about_credits_heading">Zahvale</string>
+  <string-array name="about_credits">
+    <item>EspeakZ obstaja zahvaljujoč delu projekta eSpeak NG in vseh, ki so prispevali k njemu.</item>
+    <item>eSpeak NG, github.com/espeak-ng/espeak-ng: govorni mehanizem, podatki glasov za vsak jezik in prvotna aplikacija za Android, ki jih vzdržujejo Reece H. Dunn in sodelavci eSpeak NG.</item>
+    <item>eSpeak, ki ga je ustvaril Jonathan Duddington in na katerem temelji eSpeak NG.</item>
+    <item>Aplikacija eSpeak NG za Android, avtorjev Reece H. Dunn, Beka Gozalishvili, Alexandr Epaneshnikov in sodelavcev eSpeak NG, s kodo podjetja Google Inc. in Android Open Source Project.</item>
+    <item>Vzdrževalci jezikov in prevajalci eSpeak NG in njegove aplikacije za Android.</item>
+    <item>Knjižnica Sonic avtorja Bill Cox, ki omogoča visoke hitrosti govora.</item>
+    <item>Standardna knjižnica Kotlin družbe JetBrains, pod licenco Apache License 2.0.</item>
+  </string-array>
+
+  <string name="about_license_heading">Licenca</string>
+  <string-array name="about_license">
+    <item>EspeakZ, copyright 2026 ZAPPS SOFTWARE LTD. Temelji na eSpeak NG, copyright 2005 do 2026 Jonathan Duddington, Reece H. Dunn in sodelavci eSpeak NG.</item>
+    <item>EspeakZ je prosta programska oprema z odprto kodo: lahko jo redistribuirate in spreminjate pod pogoji licence GNU General Public License, različice 3 ali katere koli poznejše različice, iste licence kot eSpeak NG. Licenca je na www.gnu.org/licenses/gpl-3.0.html.</item>
+    <item>Izvorna koda aplikacije za Android in knjižnica Sonic sta pod licenco Apache License 2.0. Nekateri deli ohranijo svoje licence: datoteke iz eSpeak NG so pod licenco BSD z 2 klavzulama, podatki Unicode pod licenco Unicode, predvajalnik govora Klatt podjetja NV Access Limited pa pod licenco GNU General Public License različice 3 ali novejše.</item>
+    <item>EspeakZ je brez garancije, v obsegu, ki ga dovoljuje zakon.</item>
+    <item>Celotna izvorna koda EspeakZ z vsemi spremembami je na github.com/zapps-ltd/EspeakZ, pod isto licenco. Odpre se z Nastavitve, EspeakZ na GitHubu.</item>
+    <item>Android je blagovna znamka podjetja Google LLC.</item>
+  </string-array>
+</resources>
